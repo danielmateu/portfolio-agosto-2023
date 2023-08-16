@@ -67,18 +67,14 @@ const AboutMe = () => {
           Estoy abierto a nuevas oportunidades, así que si crees que puedo encajar en tu equipo, no dudes en contactar conmigo.
         </p>
 
-        {/* <p className={`${theme !== 'dark' ? 'text-[#484959]' : 'text-gray-400'}  text-sm font-semibold lg:w-[90%] lg:text-[15px]`}>
-          Actualmente estoy cursando el <span className={'text-[#9333EA]'}>Bootcamp de Full Stack Web Development</span> en <span className={'text-[#9333EA]'}>Ironhack</span>, en el que estoy aprendiendo las tecnologías más demandadas del mercado, como <span className={'text-[#9333EA]'}>React</span>, <span className={'text-[#9333EA]'}>Node.js</span> y <span className={'text-[#9333EA]'}>MongoDB</span>.
-        </p> */}
-
-        <h5 className={`${theme !== 'dark' ? 'text-[#262737]' : 'text-gray-100'}  font-medium text-2xl mb-8 mt-20 flex items-end relative `}>My Stack <Image width={25} height={10} alt='triangleDesign' src={triangle} className=' relative  bottom-[5px] left-[10px]' /> </h5>
+        <h5 className={`${theme !== 'dark' ? 'text-[#262737]' : 'text-gray-100'}  font-medium text-2xl mb-8 mt-20 flex items-end relative `}>Tecnología que suelo usar <Image width={25} height={10} alt='triangleDesign' src={triangle} className=' relative  bottom-[5px] left-[10px]' /> </h5>
 
         <MyStack />
 
         <MyStudies />
 
         <div className={` mt-20 ${theme !== 'dark' ? 'text-[#262737]' : 'text-gray-200'}    text-lg mb-10`}>
-          <p className={' font-medium'}>Download my cv  <a href={cv} download={true} className={'text-[#9333EA] font-semibold'} >here!</a> </p>
+          <p className={' font-medium'}>Descarga mi cv  <a href={cv} download={true} className={'text-[#9333EA] font-semibold'} >aquí!</a> </p>
         </div>
 
       </motion.div>
