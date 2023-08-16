@@ -50,14 +50,16 @@ export default function Example() {
               </div>
               <div className={"flex flex-1 py-4 items-center sm:items-center sm:justify-between"}>
                 <div className={"flex flex-shrink-0 m-auto sm:m-0 items-center"}>
-                  <Image width={150} height={120}
-                    className={"block h-20 w-auto lg:hidden"}
+                  <Image width={100} height={100}
+                    className={"block h-20 w-auto lg:hidden scale-90 transition"}
                     src={logo}
+                    href={'#contact'}
                     alt="Portfolio logo"
                   />
-                  <Image width={150} height={120}
-                    className={"hidden h-20   w-auto lg:inline"}
+                  <Image width={100} height={100}
+                    className={"hidden h-20 w-auto lg:inline scale-90 transition"}
                     src={logo}
+                    href={'#contact'}
                     alt="Portfolio logo"
                   />
                 </div>

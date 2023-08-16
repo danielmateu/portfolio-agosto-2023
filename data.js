@@ -1,15 +1,27 @@
-import four_frame from './public/projects/four_frame.png'
-import four_frame_2 from './public/projects/four_frame_2.png'
+import {
+    four_frame,
+    four_frame_2
+} from './public/projects/four_frame'
 
-import nuko_ai from './public/projects/nuko_ai.png'
-import nuko_ai_2 from './public/projects/nuko_ai_2.png'
-import nuko_ai_3 from './public/projects/nuko_ai_3.png'
+import {
+    nuko_ai,
+    nuko_ai_2,
+    nuko_ai_3,
+    nuko_ai_4
+} from './public/projects/nuko_ai'
 
-import spotify_clon from './public/projects/spotify_clon.png'
-import spotify_clon_2 from './public/projects/spotify_clon_2.png'
-import spotify_clon_3 from './public/projects/spotify_clon_3.png'
+import {
+    spotify_clon,
+    spotify_clon_2,
+    spotify_clon_3
+} from './public/projects/spotify_clone'
 
-import solid_camper from './public/projects/solid_camper.png'
+import {
+    solid_camper,
+    solid_camper_2,
+    solid_camper_3,
+    solid_camper_4
+} from './public/projects/solid_camper'
 
 export const data = [
     {
@@ -87,19 +99,22 @@ export const data = [
                 id: 1,
                 img: solid_camper,
             },
-            // {
-            //     id: 2,
-            //     img: four_frame_2,
-            // },
+            {
+                id: 2,
+                img: solid_camper_2,
+            },
+            {
+                id: 3,
+                img: solid_camper_3,
+            },
+            {
+                id: 4,
+                img: solid_camper_4,
+            }
         ],
     },
 
-    // {
-    //     id: 2,
-    //     img: solid_camper,
-    //     info: 'ecommerce completa, creada con nextjs',
-    //     src: 'https://solidcamper.herokuapp.com/'
-    // },
+
     // {
     //     id: 3,
     //     img: guitarla,

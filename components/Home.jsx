@@ -39,8 +39,6 @@ const Home = () => {
     return (
       <div className={'gradient relative w-full h-full flex flex-col items-center justify-center z-0'}>
 
-
-
         <div className={"w-full max-w-[1000px] min-h-[90vh] sm:min-h-[100vh]  flex flex-col-reverse sm:flex-row-reverse place-content-center justify-center items-center z-40  p-4 "}>
 
           {theme === 'dark' ?
