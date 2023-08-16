@@ -1,14 +1,55 @@
 import four_frame from './public/projects/four_frame.png'
+import four_frame_2 from './public/projects/four_frame_2.png'
+
+import nuko_ai from './public/projects/nuko_ai.png'
+import nuko_ai_2 from './public/projects/nuko_ai_2.png'
+import nuko_ai_3 from './public/projects/nuko_ai_3.png'
+import nuko_ai_4 from './public/projects/nuko_ai_4.png'
 
 export const data = [
     {
         id: 1,
+        title: 'Nuko AI',
+        description: 'Aplicación Web que conecta con el API de open ai para generar textos, código, imágenes incluso música.',
+        img: nuko_ai,
+        urlDeploy: 'https://nuk-ai.vercel.app/',
+        urlRepo: 'https://github.com/danielmateu/ai-sass',
+        sliderImages: [
+            {
+                id: 1,
+                img: nuko_ai,
+            },
+            {
+                id: 2,
+                img: nuko_ai_2,
+            },
+            {
+                id: 3,
+                img: nuko_ai_3,
+            },
+            // {
+            //     id: 4,
+            //     img: nuko_ai_4,
+            // }
+        ],
+    },
+    {
+        id: 2,
         title: 'Four Frame',
-        description: 'Tienda de cuadros, creada con nextjs',
+        description: 'Clon de Netflix, en el que se puede ver el trailer de las películas, y filtrar por categorías. Creado con React, Nextjs, Tailwindcss, y la API de themoviedb.org',
         img: four_frame,
         urlDeploy: 'https://four-frame.vercel.app/',
-        urlRepo: '#',
-        sliderImages: [],
+        urlRepo: 'https://github.com/danielmateu/four-frame',
+        sliderImages: [
+            {
+                id: 1,
+                img: four_frame,
+            },
+            {
+                id: 2,
+                img: four_frame_2,
+            },
+        ],
     },
     // {
     //     id: 2,

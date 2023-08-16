@@ -14,9 +14,6 @@ import Context from '@/app/context/Context'
 import { useContext } from 'react'
 import { data } from '@/data.js'
 
-// import data from '@/data.json'
-
-
 
 const Projects = () => {
 
