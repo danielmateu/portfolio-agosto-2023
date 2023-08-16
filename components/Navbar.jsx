@@ -35,12 +35,12 @@ export default function Example() {
     <Disclosure as="nav" className={` ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-50'} fixed w-full z-[500]`}>
       {({ open }) => (
         <>
-          <div className={"mx-auto max-w-[1100px] px-2 sm:px-6 lg:px-8"}>
+          <div className={"mx-auto px-2 sm:px-6 lg:px-20"}>
             <div className={"relative flex w-full h-16 items-center justify-between"}>
               <div className={"absolute inset-y-0 left-0 flex items-center sm:hidden"}>
                 {/* Mobile menu button*/}
                 <Disclosure.Button className={"inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"}>
-                  <span className="sr-only">Open main menu</span>
+                  <span className="sr-only">Abrir menú principal</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
@@ -48,14 +48,14 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className={"flex flex-1 items-center sm:items-center sm:justify-between  sm:px-[20px] sm:pr-[90px]"}>
+              <div className={"flex flex-1 py-4 items-center sm:items-center sm:justify-between"}>
                 <div className={"flex flex-shrink-0 m-auto sm:m-0 items-center"}>
-                  <Image width={250} height={120}
-                    className={"block pl-10  h-20 w-auto lg:hidden"}
+                  <Image width={150} height={120}
+                    className={"block h-20 w-auto lg:hidden"}
                     src={logo}
                     alt="Portfolio logo"
                   />
-                  <Image width={250} height={120}
+                  <Image width={150} height={120}
                     className={"hidden h-20   w-auto lg:inline"}
                     src={logo}
                     alt="Portfolio logo"
@@ -76,9 +76,7 @@ export default function Example() {
                   </div>
                 </div>
 
-
                 <ThemeToggler />
-
               </div>
 
             </div>
