@@ -4,7 +4,12 @@ import four_frame_2 from './public/projects/four_frame_2.png'
 import nuko_ai from './public/projects/nuko_ai.png'
 import nuko_ai_2 from './public/projects/nuko_ai_2.png'
 import nuko_ai_3 from './public/projects/nuko_ai_3.png'
-import nuko_ai_4 from './public/projects/nuko_ai_4.png'
+
+import spotify_clon from './public/projects/spotify_clon.png'
+import spotify_clon_2 from './public/projects/spotify_clon_2.png'
+import spotify_clon_3 from './public/projects/spotify_clon_3.png'
+
+import solid_camper from './public/projects/solid_camper.png'
 
 export const data = [
     {
@@ -27,14 +32,51 @@ export const data = [
                 id: 3,
                 img: nuko_ai_3,
             },
-            // {
-            //     id: 4,
-            //     img: nuko_ai_4,
-            // }
+
         ],
     },
     {
         id: 2,
+        title: 'Spotify Clone',
+        description: 'Clon de Spotify, primer contacto con NextJs 13, ya tocaba actualizarse. Siguiendo las indicaciones de Code With Antonio para comprobar las nuevas features!',
+        img: spotify_clon,
+        urlDeploy: 'https://spotify-clone-dmp.vercel.app/',
+        urlRepo: 'https://github.com/danielmateu/spotify-clone',
+        sliderImages: [
+            {
+                id: 1,
+                img: spotify_clon,
+            },
+            {
+                id: 2,
+                img: spotify_clon_2,
+            },
+            {
+                id: 3,
+                img: spotify_clon_3,
+            },
+        ],
+    },
+    {
+        id: 3,
+        title: 'Solid Camper Store',
+        description: 'Ecommerce completo, con carrito de la compra, pasarela de pago, y panel de administración.',
+        img: solid_camper,
+        urlDeploy: 'https://solidcamper.herokuapp.com/',
+        urlRepo: 'https://github.com/danielmateu/05-teslo-shop',
+        sliderImages: [
+            {
+                id: 1,
+                img: solid_camper,
+            },
+            // {
+            //     id: 2,
+            //     img: four_frame_2,
+            // },
+        ],
+    },
+    {
+        id: 4,
         title: 'Four Frame',
         description: 'Clon de Netflix, en el que se puede ver el trailer de las películas, y filtrar por categorías. Creado con React, Nextjs, Tailwindcss, y la API de themoviedb.org',
         img: four_frame,
@@ -51,6 +93,7 @@ export const data = [
             },
         ],
     },
+
     // {
     //     id: 2,
     //     img: solid_camper,

@@ -1,14 +1,6 @@
-import React from 'react'
-
-
-import { FaReact } from 'react-icons/fa'
-import { SiFirebase } from 'react-icons/si'
-import { SiJavascript } from 'react-icons/si'
-import { FaSass } from 'react-icons/fa'
-import { SiTailwindcss } from 'react-icons/si'
-import { FaBootstrap } from 'react-icons/fa'
-import { SiNextdotjs } from 'react-icons/si'
-
+import { FaReact, FaStripe, FaSass, FaBootstrap } from 'react-icons/fa'
+import { SiFirebase, SiPrisma, SiSupabase, SiMongodb } from 'react-icons/si'
+import { SiJavascript, SiTailwindcss, SiNextdotjs, SiTypescript } from 'react-icons/si'
 
 const CardTechDisplayed = ({ title }) => {
 
@@ -19,7 +11,8 @@ const CardTechDisplayed = ({ title }) => {
       {title === 'Four Frame' &&
         <>
           <FaReact className={'text-[27px] text-cyan-400'} />
-          < SiNextdotjs className={'text-[27px] text-gray-500'} />
+          <SiNextdotjs className={'text-[27px] text-gray-500'} />
+          <SiTypescript className={'text-[27px] text-cyan-400'} />
           <SiTailwindcss className={'text-[27px] text-cyan-400'} />
         </>
 
@@ -28,28 +21,32 @@ const CardTechDisplayed = ({ title }) => {
       {title === 'Nuko AI' &&
         <>
           <FaReact className={'text-[27px] text-cyan-400'} />
+          <SiNextdotjs className={'text-[27px] text-gray-500'} />
+          <SiTypescript className={'text-[27px] text-blue-500'} />
           <SiTailwindcss className={'text-[27px] text-cyan-400'} />
-          {/* <SiFirebase className={'text-[27px] text-orange-600'} /> */}
-          {/* <SiTailwindcss className={'text-[27px] text-cyan-400'} /> */}
-          {/* <FaBootstrap className={'text-[27px] text-purple-600'} /> */}
+          <SiPrisma className={'text-[27px] text-slate-500'} />
+          <FaStripe className={'text-[27px] text-slate-400'} />
         </>
 
       }
 
-      {title === 'Coffee-shop' &&
+      {title === 'Spotify Clone' &&
         <>
-          <SiJavascript className={'text-[27px] text-yellow-400'} />
-          <FaSass className={'text-[27px] text-pink-600'} />
-          <FaBootstrap className={'text-[27px] text-purple-600'} />
+          <FaReact className={'text-[27px] text-cyan-400'} />
+          <SiNextdotjs className={'text-[27px] text-gray-500'} />
+          <SiTypescript className={'text-[27px] text-cyan-400'} />
+          <SiTailwindcss className={'text-[27px] text-cyan-400'} />
+          <SiSupabase className={'text-[27px] text-green-400'} />
         </>
 
       }
 
-      {title === 'YourResto' &&
+      {title === 'Solid Camper Store' &&
         <>
           <SiNextdotjs className={'text-[27px] text-gray-500'} />
           <FaReact className={'text-[27px] text-cyan-400'} />
           <SiTailwindcss className={'text-[27px] text-cyan-400'} />
+          <SiMongodb className={'text-[27px] text-green-500'} />
         </>
 
       }
