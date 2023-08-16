@@ -43,9 +43,10 @@ const CardTechDisplayed = ({ title }) => {
 
       {title === 'Solid Camper Store' &&
         <>
-          <SiNextdotjs className={'text-[27px] text-gray-500'} />
           <FaReact className={'text-[27px] text-cyan-400'} />
-          <SiTailwindcss className={'text-[27px] text-cyan-400'} />
+          <SiNextdotjs className={'text-[27px] text-gray-500'} />
+          <SiTypescript className={'text-[27px] text-cyan-400'} />
+          <FaBootstrap className={'text-[27px] text-purple-600'} />
           <SiMongodb className={'text-[27px] text-green-500'} />
         </>
 

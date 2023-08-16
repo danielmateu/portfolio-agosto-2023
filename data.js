@@ -59,24 +59,6 @@ export const data = [
     },
     {
         id: 3,
-        title: 'Solid Camper Store',
-        description: 'Ecommerce completo, con carrito de la compra, pasarela de pago, y panel de administración.',
-        img: solid_camper,
-        urlDeploy: 'https://solidcamper.herokuapp.com/',
-        urlRepo: 'https://github.com/danielmateu/05-teslo-shop',
-        sliderImages: [
-            {
-                id: 1,
-                img: solid_camper,
-            },
-            // {
-            //     id: 2,
-            //     img: four_frame_2,
-            // },
-        ],
-    },
-    {
-        id: 4,
         title: 'Four Frame',
         description: 'Clon de Netflix, en el que se puede ver el trailer de las películas, y filtrar por categorías. Creado con React, Nextjs, Tailwindcss, y la API de themoviedb.org',
         img: four_frame,
@@ -91,6 +73,24 @@ export const data = [
                 id: 2,
                 img: four_frame_2,
             },
+        ],
+    },
+    {
+        id: 4,
+        title: 'Solid Camper Store',
+        description: 'Ecommerce completo, con carrito de la compra, pasarela de pago, y panel de administración.',
+        img: solid_camper,
+        urlDeploy: 'https://solidcamper.herokuapp.com/',
+        urlRepo: 'https://github.com/danielmateu/05-teslo-shop',
+        sliderImages: [
+            {
+                id: 1,
+                img: solid_camper,
+            },
+            // {
+            //     id: 2,
+            //     img: four_frame_2,
+            // },
         ],
     },
 
