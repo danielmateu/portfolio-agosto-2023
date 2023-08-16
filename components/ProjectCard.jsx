@@ -30,9 +30,9 @@ const ProjectCard = ({ title, img, description, urlDeploy, urlRepo, sliderImages
 
 
   return (
-    <motion.div initial={{ y: 150 }} whileInView={{ y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }} className={'flex w-[100%] max-w-[350px]  md:max-w-[750px] lg:max-w-[850px] md:gap-x-16 flex-col md:flex-row m-auto  justify-center items-center z-50'}>
+    <motion.div initial={{ y: 150 }} whileInView={{ y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }} className={'flex w-[100%] max-w-[350px]  md:max-w-[750px] lg:max-w-[850px] md:gap-x-16 flex-col md:flex-row m-auto justify-center items-center z-50'}>
 
-      <div className={'m-auto pb-5 w-full'} >
+      <div className={'m-auto w-full'} >
 
         <button onClick={() => checkModalState()} className='w-full'>
 
@@ -43,11 +43,11 @@ const ProjectCard = ({ title, img, description, urlDeploy, urlRepo, sliderImages
         <ProjectModal state={open} img={img} description={description} urlDeploy={urlDeploy} title={title} urlRepo={urlRepo} sliderImages={sliderImages} />
       </div>
 
-      <div className={'w-full sm:self-end sm:ml-10 mb-5}'}>
-        <div className={'flex w-full justify-between items-start  mt-5 md:w-[90%]'}>
+      <div className={'w-full sm:self-end sm:ml-10 }'}>
+        <div className={'flex w-full justify-between items-center   md:w-[90%]'}>
           <h3 className={`${theme !== 'dark' ? 'text-gray-800' : 'text-white'} ml-1   text-lg font-medium z-50 lg:text-xl`}>{title} </h3>
 
-          <div className={' pb-10 self-start ml-1 flex gap-4 '}>
+          <div className={'pb-4 self-start ml-1 flex gap-4 '}>
             <a href={urlRepo} target='_blank' className={'flex flex-col text-xs text-[#9333EA]'}><AiOutlineGithub className={'text-[24px] cursor-pointer  hover:opacity-80'} /></a>
             <a href={urlDeploy} target='_blank' > <RxRocket className={'text-[24px]  text-[#9333EA] cursor-pointer  hover:opacity-80 '} /></a>
           </div>
@@ -55,7 +55,7 @@ const ProjectCard = ({ title, img, description, urlDeploy, urlRepo, sliderImages
 
         <p className={`${theme !== 'dark' ? 'text-gray-600' : 'text-gray-300'} text-[14px] self-center  z-50 w-[100%] md:w-[95%]`}>{description} </p>
 
-        <div className={'flex w-full justify-between items-start  mt-5 md:w-[90%]'}>
+        <div className={'flex flex-col gap-2 w-full justify-between items-start  mt-5 md:w-[90%]'}>
           <h4 className={`${theme !== 'dark' ? 'text-gray-800' : 'text-gray-100'} self-start ml-1 font-semibold`}>Tecnologias usadas:</h4>
 
 

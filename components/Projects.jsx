@@ -21,7 +21,7 @@ const Projects = () => {
 
   return (
 
-    <section className={` flex flex-col items-center z-50  w-full ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-100'} relative z-100`} id='projects' >
+    <section className={`flex flex-col items-center z-50  w-full ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-100'} relative z-100`} id='projects' >
 
       {/* <Image width={500} height={250} alt='rectangle design' src={lightBoxDesign} className={` w-[22%]  ${theme !== 'dark' ? 'opacity-30' : 'opacity-80'} absolute left-0 top-20   z-0   `} /> */}
 
@@ -32,12 +32,12 @@ const Projects = () => {
 
         <div className={'w-full max-w-[350px] md:max-w-[800px] md:pl-3  lg:max-w-[900px]  '}>
 
-          <h2 className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} text-3xl text-start m-auto mt-[100px] mb-[60px] ml-3 lg:text-[40px]  flex`}>Projects <Image width={30} height={15} alt='triangleDesign' src={triangle} className={' max-h-[30px] relative bottom-[-6px] left-[10px]'} /></h2>
+          <h2 className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} text-3xl text-start m-auto mt-[100px] mb-[60px] ml-3 lg:text-[40px]  flex`}>Mis proyectos <Image width={30} height={15} alt='triangleDesign' src={triangle} className={' max-h-[30px] relative bottom-[-6px] left-[10px]'} /></h2>
         </div>
 
         <div className={'w-[95%] max-w-[1000px] flex flex-col  gap-20 items-center justify-center '}>
 
-          {data.slice(0, 5).map((project) => (
+          {data.slice(0, 4).map((project) => (
 
             project.reverse ? (
               <ProjectCardReverse key={project.title} title={project.title} description={project.description} img={project.img} urlDeploy={project.urlDeploy} urlRepo={project.urlRepo} sliderImages={project.sliderImages} />
@@ -49,9 +49,6 @@ const Projects = () => {
 
                 <ProjectCard key={project.title} title={project.title} description={project.description} img={project.img} urlDeploy={project.urlDeploy} urlRepo={project.urlRepo} sliderImages={project.sliderImages} />
               )
-
-
-
           ))}
 
           <Image width={500} height={250} alt='rectangle design' src={lightBoxDesign2} className={` w-[30%]  ${theme !== 'dark' ? 'opacity-30' : 'opacity-80'} absolute right-0 top-[40%]   z-0   `} />

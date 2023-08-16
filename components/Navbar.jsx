@@ -10,6 +10,7 @@ import Context from '@/app/context/Context'
 import { useContext } from 'react'
 import Image from 'next/image'
 import ThemeToggler from './ThemeToggler'
+import Link from 'next/link'
 
 const navigation = [
   { name: 'Inicio', href: '#', current: true },
@@ -18,11 +19,9 @@ const navigation = [
   { name: 'Contacto', href: '#contact', current: true },
 ]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
-
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(' ')
+// }
 
 
 export default function Example() {
@@ -53,15 +52,17 @@ export default function Example() {
                   <Image width={100} height={100}
                     className={"block h-20 w-auto lg:hidden scale-90 transition"}
                     src={logo}
-                    href={'#contact'}
+                    href={'#'}
                     alt="Portfolio logo"
                   />
-                  <Image width={100} height={100}
-                    className={"hidden h-20 w-auto lg:inline scale-90 transition"}
-                    src={logo}
-                    href={'#contact'}
-                    alt="Portfolio logo"
-                  />
+                  {/*  */}
+                  <Link href={'#'}><span className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} text-2xl font-semibold ml-2`}>
+                    <Image width={100} height={100}
+                      className={"hidden h-20 w-auto lg:inline scale-90 transition"}
+                      src={logo}
+
+                      alt="Portfolio logo"
+                    /></span></Link>
                 </div>
                 <div className={"hidden  sm:block"}>
                   <div className={"flex "}>

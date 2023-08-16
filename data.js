@@ -23,6 +23,14 @@ import {
     solid_camper_4
 } from './public/projects/solid_camper'
 
+
+import { crm_clientes, crm_clientes_2, crm_clientes_3 } from './public/projects/crm_clientes';
+import { tic_tac_toe } from './public/projects/tic_tac_toe';
+import { cripto_app } from './public/projects/crypto';
+import { gastos } from './public/projects/control_gastos';
+import { guitarla } from './public/projects/guitarla';
+import { calendar } from './public/projects/mern_calendar';
+
 export const data = [
     {
         id: 1,
@@ -113,6 +121,68 @@ export const data = [
             }
         ],
     },
+    {
+        id: 5,
+        title: 'CRM de Clientes',
+        description: ' CRM (Customer Relationship Management) que permite la gestión de clientes, pedidos y productos.',
+        img: crm_clientes,
+        urlDeploy: 'https://crm-cliente-next.vercel.app',
+        urlRepo: 'https://github.com/danielmateu/crm-cliente-next',
+        sliderImages: [
+            {
+                id: 1,
+                img: crm_clientes,
+            },
+            {
+                id: 2,
+                img: crm_clientes_2,
+            },
+            {
+                id: 3,
+                img: crm_clientes_3,
+            }
+        ]
+    },
+    {
+        id: 6,
+        title: 'Tic Tac Toe',
+        description: 'Clásico juego del 3 en raya realizado integramente con JavaScript y Tailwindcss para el diseño.',
+        img: tic_tac_toe,
+        urlDeploy: 'https://tic-tac-toe-ecru-two.vercel.app/',
+        urlRepo: 'https://github.com/danielmateu/tic-tac-toe',
+        sliderImages: []
+    },
+    {
+        id: 7,
+        title: 'Crypto App',
+        description: 'Aplicación para convertir el valor de las monedas más usadas a las Crypto más demandadas',
+        img: cripto_app,
+        urlDeploy: 'https://cryptos-psi.vercel.app/',
+        urlRepo: 'https://github.com/danielmateu/cryptos',
+    },
+    {
+        id: 8,
+        title: 'Control de Gastos',
+        description: 'Aplicación para controlar los gastos mensuales, y poder ver en que se gasta más dinero.',
+        img: gastos,
+        urlDeploy: 'https://control-de-gastos-nine.vercel.app/',
+        urlRepo: 'https://github.com/danielmateu/control-de-gastos',
+    },
+    {
+        id: 9,
+        title: 'Guitar LA',
+        description: 'Tienda y un blog con artículos de interés para los guitarristas.',
+        img: guitarla,
+        urlDeploy: 'https://guitarla-next-black-mu.vercel.app/',
+        urlRepo: ''
+    }, {
+        id: 10,
+        title: 'Mern Calendar',
+        description: 'Calendario con eventos, creado con MERN stack.',
+        img: calendar,
+        urlDeploy: 'https://mern-calendar-dmateu.herokuapp.com/',
+        urlRepo: 'https://github.com/danielmateu/calendar-mern-revisited',
+    }
 
 
     // {
@@ -121,36 +191,14 @@ export const data = [
     //     info: 'Tienda de guitarras',
     //     src: 'https://guitarla-next-black-mu.vercel.app/'
     // },
-    // {
-    //     id: 4,
-    //     img: tictactoe,
-    //     info: 'Clásico juego del 3 en raya',
-    //     src: 'https://tic-tac-toe-ecru-two.vercel.app/'
-    // },
+
     // {
     //     id: 5,
     //     img: freshCoffee,
     //     info: 'Quiosco enfocado a la típica cafetería',
     //     src: 'https://nukiosco-app.vercel.app/'
     // },
-    // {
-    //     id: 6,
-    //     img: calendar,
-    //     info: 'Full Mern Calendar',
-    //     src: 'https://mern-calendar-dmateu.herokuapp.com/auth/login'
-    // },
-    // {
-    //     id: 7,
-    //     img: control_gastos,
-    //     info: 'Planificador de gastos',
-    //     src: 'https://control-de-gastos-nine.vercel.app/'
-    // },
-    // {
-    //     id: 8,
-    //     img: crypto,
-    //     info: 'Aplicación para convertir el valor de las monedas más usadas a las Crypto más demandadas',
-    //     src: 'https://cryptos-psi.vercel.app/'
-    // },
+
 
 
 

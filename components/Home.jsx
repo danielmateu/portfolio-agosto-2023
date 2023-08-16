@@ -13,7 +13,7 @@ import Loader from './Loader'
 import '../app/globals.css'
 
 import { motion } from 'framer-motion'
-import TruckAnimation from './TruckAnimation'
+// import TruckAnimation from './TruckAnimation'
 import bg from '../public/assets/bg.svg'
 import bgWhite from '../public/assets/bg-white.svg'
 
@@ -70,7 +70,7 @@ const Home = () => {
 
 
         </div>
-        <TruckAnimation />
+        {/* <TruckAnimation /> */}
 
 
       </div>
