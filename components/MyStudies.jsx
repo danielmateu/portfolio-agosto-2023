@@ -1,11 +1,11 @@
 'use client'
-import React from 'react'
+
 import { BsDot } from 'react-icons/bs'
-import Image from 'next/image'
-import triangle from '../public/assets/triangle.webp'
+
 import Context from '@/app/context/Context'
 
 import { useContext } from 'react'
+import { TriangleDesign } from './TriangleDesign'
 
 const MyStudies = () => {
 
@@ -38,7 +38,7 @@ const MyStudies = () => {
   return (
     <>
       <div className={'w-full'}>
-        <h6 className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-900'} text-2xl font-medium mb-12 mt-20 flex items-end relative `}>Mis estudios como programador<Image width={25} height={10} alt='triangleDesign' src={triangle} className={' relative  bottom-[5px] left-[10px]'} /></h6>
+        <h6 className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-900'} text-2xl font-medium mb-12 mt-20 flex items-end relative `}>Mis estudios como programador<TriangleDesign width={30} height={30} alt='triangle design' /></h6>
 
         <div className={'w-full max-w-[1000px] flex flex-col gap-10 sm:flex-row md:gap-20 lg:gap-[120px]'}>
 

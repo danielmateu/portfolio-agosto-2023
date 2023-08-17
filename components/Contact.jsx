@@ -5,9 +5,7 @@ import Image from 'next/image'
 import { ChakraProvider, FormErrorMessage, useToast, FormControl, FormLabel, Input, Textarea, Button } from '@chakra-ui/react'
 
 import triangle from '../public/assets/triangle.webp'
-import { AiFillLinkedin } from 'react-icons/ai'
-import { AiOutlineInstagram } from 'react-icons/ai'
-import { AiFillGithub } from 'react-icons/ai'
+import { AiFillLinkedin, AiOutlineInstagram, AiFillGithub } from 'react-icons/ai'
 
 import avatar from '../public/assets/fullbodyAvatar.webp'
 
@@ -15,8 +13,7 @@ import Context from '@/app/context/Context'
 
 import { useContext, useState } from 'react'
 
-import { sendForm } from '@/lib/sendFrom'
-
+import { enviarFormulario, sendForm } from '@/lib/sendFrom'
 
 import { motion } from 'framer-motion'
 
@@ -56,8 +53,8 @@ function Contact() {
     if (values.name === '' || values.email === '' || values.msg === '') {
 
       toast({
-        title: 'Fields missing!',
-        description: 'Complete every field if you want to send the message please',
+        title: 'Falta completar algún campo!',
+        description: 'Rellena todos los campos para poder enviar el mensaje.',
         status: 'error',
         duration: '4500',
         isClosable: true
@@ -67,12 +64,13 @@ function Contact() {
         ...prev,
         isLoading: true
       }))
+      // enviarFormulario(values)
       await sendForm(values)
       setValueChange({})
       setState(initState)
       toast({
-        title: 'Message sent.',
-        description: "Thank you for contacting with me!",
+        title: 'Mensaje enviado!',
+        description: "Gracias por contactar conmigo, te responderé lo antes posible.",
         status: 'success',
         position: "top",
         duration: 2500,
@@ -88,8 +86,6 @@ function Contact() {
     <ChakraProvider>
 
       <section className={` pb-14 z-50 flex justify-center relative w-full ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-100'}  pt-20`} id='contact'>
-
-
         <motion.div initial={{ y: 200 }} whileInView={{ y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }} className={'w-full max-w-[850px] relative flex flex-col items-center justify-between sm:flex-row'}>
 
           <div className={'w-full max-w-[400px] flex flex-col justify-center  '}>

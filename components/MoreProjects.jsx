@@ -9,9 +9,10 @@ import { SiGraphql, SiNextdotjs, SiTailwindcss, SiJavascript, SiReact } from 're
 import { RxRocket } from 'react-icons/rx'
 import { AiOutlineGithub } from 'react-icons/ai'
 import Link from 'next/link'
-import triangle from '../public/assets/triangle.webp'
+
 import { data } from '@/data'
 import { BsBootstrap } from 'react-icons/bs'
+import { TriangleDesign } from './TriangleDesign'
 
 
 
@@ -29,7 +30,8 @@ const MoreProjects = () => {
 
         <div className='w-full max-w-[350px] md:max-w-[800px] md:pl-3  lg:max-w-[1000px]  '>
 
-          <h2 className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} text-3xl self-start m-auto mt-[100px] mb-[60px] ml-5  lg:ml-2   flex`}>Más proyectos <Image width={30} height={15} alt='triangleDesign' src={triangle} className={' max-h-[30px] relative bottom-[-6px] left-[10px]'} /></h2>
+          <h2 className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} text-3xl self-start m-auto mt-[100px] mb-[60px] ml-5  lg:ml-2   flex`}>Más proyectos <TriangleDesign width={30} height={30} alt='triangle design' />
+          </h2>
         </div>
       </div>
 
