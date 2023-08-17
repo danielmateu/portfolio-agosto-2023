@@ -23,8 +23,9 @@ const MyStack = () => {
   return (
     <>
       {/* MY STACK */}
-      <div className={' flex gap-7 flex-wrap lg:w-[90%]'}>
+      <h5 className={`${theme !== 'dark' ? 'text-[#262737]' : 'text-gray-100'}  font-medium text-2xl mb-8 mt-20 flex items-end relative `}>Tecnologías que suelo usar </h5>
 
+      <div className={' flex gap-7 flex-wrap lg:w-[90%] items-center justify-center'}>
 
         <div className={'flex flex-col justify-center '}>
           <SiJavascript className={'text-[35px] text-yellow-400  ml-2 mb-1.5 lg:text-[45px]'} />

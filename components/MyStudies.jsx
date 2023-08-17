@@ -15,16 +15,28 @@ const MyStudies = () => {
   const coderHouseCourses = [
     'Desarrollo Web Full Stack con React.js y Node.js',
     'Next Js',
-    'Javascript',
-    'UX/UI Design',
-    'Librerías Javascript',
+    // 'Javascript',
+    'UX/UI Design con Figma',
+    // 'Librerías Javascript',
+    'Tailwind CSS',
     'Librerías React',
+    'Librerías Node.js',
     'Backend con Node.js, Express y MongoDB',
+    'MongoDB',
+    'Docker',
+    'React Native',
+    'Firebase',
+    'PHP',
+    'C#',
+    'Desarrollo de videojuegos con Unity',
+    'Pyhon',
   ]
 
   const educacionITCourses = [
-    'Javascript Advanced Developer',
+    'Javascript avanzado',
+    'Typescript',
     'Angular',
+    'MySQL',
     'Bootstrap',
     'Sass & Less',
     'POO con Javascript',
@@ -32,19 +44,20 @@ const MyStudies = () => {
     'Web layout with html & css',
     'Introduction to UX',
     'Web development with html ',
+    `Git y Github`,
 
   ]
 
   return (
     <>
       <div className={'w-full'}>
-        <h6 className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-900'} text-2xl font-medium mb-12 mt-20 flex items-end relative `}>Mis estudios como programador<TriangleDesign width={30} height={30} alt='triangle design' /></h6>
+        <h6 className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-900'} text-2xl font-medium mb-12 mt-20 flex items-end relative `}>Mis estudios como programador</h6>
 
         <div className={'w-full max-w-[1000px] flex flex-col gap-10 sm:flex-row md:gap-20 lg:gap-[120px]'}>
 
           <div>
             <span className={`${theme === 'dark' ? 'text-gray-200' : 'text-gray-800'} font-semibold text-lg ml-2 `}>
-              Másters en Online
+              Másters Online
             </span>
 
             <ul className={'border-l-[2px] border-[#9333EA] mt-5 pl-1.5 flex flex-col gap-2  '}>

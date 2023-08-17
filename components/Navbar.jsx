@@ -19,10 +19,6 @@ const navigation = [
   { name: 'Contacto', href: '#contact', current: true },
 ]
 
-// function classNames(...classes) {
-//   return classes.filter(Boolean).join(' ')
-// }
-
 
 export default function Example() {
 
@@ -50,7 +46,7 @@ export default function Example() {
               <div className={"flex flex-1 py-4 items-center sm:items-center sm:justify-between"}>
                 <div className={"flex flex-shrink-0 m-auto sm:m-0 items-center"}>
                   <Image width={100} height={100}
-                    className={"block h-20 w-auto lg:hidden scale-90 transition"}
+                    className={"block h-20 w-auto lg:hidden scale-90 transition cursor-pointer"}
                     src={logo}
                     href={'#'}
                     alt="Portfolio logo"
@@ -58,9 +54,8 @@ export default function Example() {
                   {/*  */}
                   <Link href={'#'}><span className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} text-2xl font-semibold ml-2`}>
                     <Image width={100} height={100}
-                      className={"hidden h-20 w-auto lg:inline scale-90 transition"}
+                      className={"hidden h-20 w-auto lg:inline scale-90 transition cursor-pointer"}
                       src={logo}
-
                       alt="Portfolio logo"
                     /></span></Link>
                 </div>
