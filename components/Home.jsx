@@ -63,8 +63,11 @@ const Home = () => {
             <p className={`mt-5   ${theme !== 'dark' ? 'text-gray-600' : 'text-[#bbb]'} font-medium w-[89%] text-sm sm:w-[65%] sm:text-[16px] md:text-[18px] `}>Desarrollador Front End con amplia experiencia en Back End. </p>
 
             <motion.div className={'pt-8'} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }}>
-              <a href='#projects' className={" text-sm border-[1px] font-regular border-[#9333EA] bg-[#9333EA] py-[9px] px-9 mr-3 rounded-[5px]  text-white transition-all duration-200 hover:opacity-80 sm:text-base lg:text-lg"}>Proyectos</a>
-              <a href='#contact' className={` text-sm border-[1px] font-regular border-[#9333EA] py-[9px] px-6 rounded-[5px]  ${theme !== 'dark' ? 'text-gray-800' : 'text-[#fff]'} transition-all duration-200 hover:bg-[#9333EA] hover:text-white  sm:text-base lg:text-lg`}>Quieres contactar?!</a>
+              <div className='flex flex-col sm:flex-row text-center w-fit gap-4 sm:gap-0'>
+
+                <a href='#projects' className={" text-sm border-[1px] font-regular border-[#9333EA] bg-[#9333EA] py-[9px] px-9 mr-3 rounded-[5px]  text-white transition-all duration-200 hover:opacity-80 sm:text-base lg:text-lg"}>Proyectos</a>
+                <a href='#contact' className={` text-sm border-[1px] font-regular border-[#9333EA] py-[9px] px-6 rounded-[5px]  ${theme !== 'dark' ? 'text-gray-800' : 'text-[#fff]'} transition-all duration-200 hover:bg-[#9333EA] hover:text-white  sm:text-base lg:text-lg`}>Quieres contactar?!</a>
+              </div>
             </motion.div>
           </motion.div>
 
