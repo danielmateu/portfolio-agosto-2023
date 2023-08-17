@@ -56,7 +56,7 @@ const Projects = () => {
       </div>
       <motion.div className='mb-20 mt-20' initial={{ y: 150 }} whileInView={{ y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
 
-        <a href="#contact" className={` text-base border-[1px] font-regular border-[#9333EA] py-[8px] px-7 rounded-[5px] ${theme === 'dark' ? 'text-white' : 'text-gray-800'} transition-all duration-200 hover:bg-[#9333EA] `}>Contact me!</a>
+        <a href="#contact" className={` text-base border-[1px] font-regular border-[#9333EA] py-[8px] px-7 rounded-[5px] ${theme === 'dark' ? 'text-white' : 'text-gray-800'} transition-all duration-200 hover:bg-[#9333EA] `}>Contacta conmigo!</a>
       </motion.div>
     </section>
   )
