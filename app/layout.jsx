@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import ThemeContext from './context/ThemeContext'
 import Footer from '@/components/Footer'
 export const metadata = {
-  title: 'Daniel Mateu',
+  title: 'Daniel Mateu - Portfolio',
   description: 'Portfolio de Daniel Mateu, desarrollador web fullstack',
   icon: 'https://res.cloudinary.com/daniel-mateu-pardo/image/upload/v1692264284/STK-20211030-WA0013_jc9ymw.webp',
 }
