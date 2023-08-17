@@ -184,22 +184,4 @@ export const data = [
         urlRepo: 'https://github.com/danielmateu/calendar-mern-revisited',
     }
 
-
-    // {
-    //     id: 3,
-    //     img: guitarla,
-    //     info: 'Tienda de guitarras',
-    //     src: 'https://guitarla-next-black-mu.vercel.app/'
-    // },
-
-    // {
-    //     id: 5,
-    //     img: freshCoffee,
-    //     info: 'Quiosco enfocado a la típica cafetería',
-    //     src: 'https://nukiosco-app.vercel.app/'
-    // },
-
-
-
-
 ];
