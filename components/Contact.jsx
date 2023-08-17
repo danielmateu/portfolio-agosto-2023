@@ -16,6 +16,9 @@ import { useContext, useState } from 'react'
 import { enviarFormulario, sendForm } from '@/lib/sendFrom'
 
 import { motion } from 'framer-motion'
+import { SiGmail } from 'react-icons/si'
+
+
 
 const initValues = { name: "", email: "", msg: "" }
 const initState = { values: initValues }
@@ -84,16 +87,15 @@ function Contact() {
 
   return (
     <ChakraProvider>
-
       <section className={` pb-14 z-50 flex justify-center relative w-full ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-100'}  pt-20`} id='contact'>
         <motion.div initial={{ y: 200 }} whileInView={{ y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }} className={'w-full max-w-[850px] relative flex flex-col items-center justify-between sm:flex-row'}>
 
-          <div className={'w-full max-w-[400px] flex flex-col justify-center  '}>
+          <div className={'w-full max-w-[400px] flex flex-col justify-center items-center  '}>
 
             <h6 className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'} text-3xl lg:text-4xl font-semibold flex relative ml-5 mr-5`}>  <Image width={30} height={15} alt='triangleDesign' src={triangle} className={' max-h-[30px] relative bottom-[-6px] left-[-10px]'} />Quieres contactar?</h6>
 
 
-            <form action="post" className={'flex flex-col w-[90%] max-w-[400px] gap-2 mt-14 self-center'}>
+            {/* <form action="post" className={'flex flex-col w-[90%] max-w-[400px] gap-2 mt-14 self-center'}>
 
               <FormControl isInvalid={valueChange.name && !values.name}>
 
@@ -107,7 +109,7 @@ function Contact() {
                   border={'none'}
                   bg={`${theme !== 'dark' ? 'gray.300 ' : '#262737'}`}
                   className={`${theme !== 'dark' ? ' text-gray-800' : ' text-gray-200'}  min-h-[40px] rounded-md p-1 pl-2 `} />
-                <FormErrorMessage>Required</FormErrorMessage>
+                <FormErrorMessage>Campo requerido</FormErrorMessage>
               </FormControl>
 
 
@@ -123,7 +125,7 @@ function Contact() {
                   type="mail"
                   bg={`${theme !== 'dark' ? 'gray.300 ' : '#262737'}`}
                   className={` ${theme !== 'dark' ? ' text-gray-800' : 'text-gray-200'}   min-h-[40px] rounded-md p-1 pl-2 `} />
-                <FormErrorMessage>Required</FormErrorMessage>
+                <FormErrorMessage>Campo requerido</FormErrorMessage>
 
               </FormControl>
 
@@ -140,7 +142,7 @@ function Contact() {
                   bg={`${theme !== 'dark' ? 'gray.300 ' : '#262737'}`}
                   className={`${theme !== 'dark' ? ' text-gray-800' : ' text-gray-200'} rounded-md  p-1 pl-2`}></Textarea>
 
-                <FormErrorMessage>Required</FormErrorMessage>
+                <FormErrorMessage>Campo requerido</FormErrorMessage>
               </FormControl>
 
 
@@ -151,7 +153,12 @@ function Contact() {
                 className={' text-base border-[1px] font-regular border-[#9333EA]  py-[6px] px-9 mt-3 rounded-[5px] text-white transition-all duration-200 hover:opacity-80  lg:text-lg'}>
                 Enviar
               </Button>
-            </form>
+            </form> */}
+            <a href="mailto:danielmateu86@gmail.com" target='_blank'
+              className={'mt-10 self-center'}
+            >
+              <SiGmail className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#9333EA] transition-all duration-200 cursor-pointer`} />
+            </a>
 
             <h6 className={`${theme === 'dark' ? 'text-gray-300' : 'text-gray-800'} text-xl font-medium text-left self-left mt-10 self-center`}>Redes sociales: </h6>
             <div className={'flex gap-5 mt-5 mb-10 self-center'}>
@@ -169,6 +176,11 @@ function Contact() {
                 <AiFillGithub className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#9333EA] transition-all duration-200 cursor-pointer`} />
 
               </a>
+
+              {/* Gmail */}
+
+
+
             </div>
 
           </div>
