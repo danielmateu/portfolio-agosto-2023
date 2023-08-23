@@ -30,6 +30,17 @@ const CardTechDisplayed = ({ title }) => {
 
       }
 
+      {
+        title === 'Dudes AI' &&
+        <>
+          <SiNextdotjs className={'text-[27px] text-gray-500'} />
+          <SiTypescript className={'text-[27px] text-cyan-400'} />
+          <SiTailwindcss className={'text-[27px] text-cyan-400'} />
+          <SiPrisma className={'text-[27px] text-slate-500'} />
+          <FaStripe className={'text-[27px] text-slate-400'} />
+        </>
+      }
+
       {title === 'Spotify Clone' &&
         <>
           <FaReact className={'text-[27px] text-cyan-400'} />

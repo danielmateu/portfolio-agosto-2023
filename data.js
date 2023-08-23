@@ -23,6 +23,12 @@ import {
     solid_camper_4
 } from './public/projects/solid_camper'
 
+import {
+    dudes_ai,
+    dudes_ai_2,
+    dudes_ai_3
+} from './public/projects/dudes_ai'
+
 
 import { crm_clientes, crm_clientes_2, crm_clientes_3 } from './public/projects/crm_clientes';
 import { tic_tac_toe } from './public/projects/tic_tac_toe';
@@ -57,6 +63,28 @@ export const data = [
     },
     {
         id: 2,
+        title: 'Dudes AI',
+        description: 'Aplicación que consume los recursos de la IA para hablar con nuestros colegas más top.',
+        img: dudes_ai,
+        urlDeploy: 'https://dudes-ai.vercel.app/',
+        urlRepo: 'https://github.com/danielmateu/ai-dudes',
+        sliderImages: [
+            {
+                id: 1,
+                img: dudes_ai,
+            },
+            {
+                id: 2,
+                img: dudes_ai_2,
+            },
+            {
+                id: 3,
+                img: dudes_ai_3,
+            }
+        ]
+    },
+    {
+        id: 3,
         title: 'Spotify Clone',
         description: 'Clon de Spotify, primer contacto con NextJs 13, ya tocaba actualizarse. Siguiendo las indicaciones de Code With Antonio para comprobar las nuevas features!',
         img: spotify_clon,
@@ -78,7 +106,7 @@ export const data = [
         ],
     },
     {
-        id: 3,
+        id: 4,
         title: 'Four Frame',
         description: 'Clon de Netflix, en el que se puede ver el trailer de las películas, y filtrar por categorías. Creado con React, Nextjs, Tailwindcss, y la API de themoviedb.org',
         img: four_frame,
@@ -96,7 +124,7 @@ export const data = [
         ],
     },
     {
-        id: 4,
+        id: 5,
         title: 'Solid Camper Store',
         description: 'Ecommerce completo, con carrito de la compra, pasarela de pago, y panel de administración.',
         img: solid_camper,
@@ -122,7 +150,7 @@ export const data = [
         ],
     },
     {
-        id: 5,
+        id: 6,
         title: 'CRM de Clientes',
         description: ' CRM (Customer Relationship Management) que permite la gestión de clientes, pedidos y productos.',
         img: crm_clientes,
@@ -144,7 +172,7 @@ export const data = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         title: 'Tic Tac Toe',
         description: 'Clásico juego del 3 en raya realizado integramente con JavaScript y Tailwindcss para el diseño.',
         img: tic_tac_toe,
@@ -153,7 +181,7 @@ export const data = [
         sliderImages: []
     },
     {
-        id: 7,
+        id: 8,
         title: 'Crypto App',
         description: 'Aplicación para convertir el valor de las monedas más usadas a las Crypto más demandadas',
         img: cripto_app,
@@ -161,7 +189,7 @@ export const data = [
         urlRepo: 'https://github.com/danielmateu/cryptos',
     },
     {
-        id: 8,
+        id: 9,
         title: 'Control de Gastos',
         description: 'Aplicación para controlar los gastos mensuales, y poder ver en que se gasta más dinero.',
         img: gastos,
@@ -169,14 +197,14 @@ export const data = [
         urlRepo: 'https://github.com/danielmateu/control-de-gastos',
     },
     {
-        id: 9,
+        id: 10,
         title: 'Guitar LA',
         description: 'Tienda y un blog con artículos de interés para los guitarristas.',
         img: guitarla,
         urlDeploy: 'https://guitarla-next-black-mu.vercel.app/',
         urlRepo: ''
     }, {
-        id: 10,
+        id: 11,
         title: 'Mern Calendar',
         description: 'Calendario con eventos, creado con MERN stack.',
         img: calendar,
