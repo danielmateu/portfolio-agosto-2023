@@ -66,7 +66,7 @@ export const data = [
         title: 'Dudes AI',
         description: 'Aplicación que consume los recursos de la IA para hablar con nuestros colegas más top.',
         img: dudes_ai,
-        urlDeploy: 'https://dudes-ai.vercel.app/',
+        urlDeploy: 'https://ai-dudes.vercel.app/',
         urlRepo: 'https://github.com/danielmateu/ai-dudes',
         sliderImages: [
             {
