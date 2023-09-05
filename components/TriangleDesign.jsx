@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import triangle from '../public/assets/triangle.webp'
 

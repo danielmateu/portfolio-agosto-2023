@@ -1,3 +1,5 @@
+'use client'
+
 import { FaReact, FaStripe, FaSass, FaBootstrap } from 'react-icons/fa'
 import { SiFirebase, SiPrisma, SiSupabase, SiMongodb } from 'react-icons/si'
 import { SiJavascript, SiTailwindcss, SiNextdotjs, SiTypescript } from 'react-icons/si'
