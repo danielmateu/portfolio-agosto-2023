@@ -29,6 +29,14 @@ import {
     dudes_ai_3
 } from './public/projects/dudes_ai'
 
+import {
+    my_places,
+    my_places_2,
+    my_places_3,
+    my_places_4,
+    my_places_5
+} from './public/projects/my_places'
+
 
 import { crm_clientes, crm_clientes_2, crm_clientes_3 } from './public/projects/crm_clientes';
 import { tic_tac_toe } from './public/projects/tic_tac_toe';
@@ -104,6 +112,36 @@ export const data = [
                 img: spotify_clon_3,
             },
         ],
+    },
+    {
+        id: 12,
+        title: 'My Places',
+        description: 'Clon de la web de Airbnb, en el que se puede ver los alojamientos disponibles, y filtrar por categorías. Creado con React, Nextjs, Tailwindcss.',
+        img: my_places,
+        urlDeploy: 'https://my-places-chi.vercel.app/',
+        urlRepo: 'https://github.com/danielmateu/airbnb',
+        sliderImages: [
+            {
+                id: 1,
+                img: my_places,
+            },
+            {
+                id: 2,
+                img: my_places_2,
+            },
+            {
+                id: 3,
+                img: my_places_3,
+            },
+            {
+                id: 4,
+                img: my_places_4,
+            },
+            {
+                id: 5,
+                img: my_places_5,
+            }
+        ]
     },
     {
         id: 4,
@@ -203,13 +241,15 @@ export const data = [
         img: guitarla,
         urlDeploy: 'https://guitarla-next-black-mu.vercel.app/',
         urlRepo: ''
-    }, {
+    },
+    {
         id: 11,
         title: 'Mern Calendar',
         description: 'Calendario con eventos, creado con MERN stack.',
         img: calendar,
         urlDeploy: 'https://mern-calendar-dmateu.herokuapp.com/',
         urlRepo: 'https://github.com/danielmateu/calendar-mern-revisited',
-    }
+    },
+
 
 ];

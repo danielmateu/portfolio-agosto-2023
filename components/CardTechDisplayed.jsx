@@ -63,6 +63,18 @@ const CardTechDisplayed = ({ title }) => {
 
       }
 
+      {
+        title === 'My Places' &&
+        <>
+          <SiNextdotjs className={'text-[27px] text-gray-500'} />
+          <SiTypescript className={'text-[27px] text-cyan-400'} />
+          <SiTailwindcss className={'text-[27px] text-cyan-400'} />
+          <SiPrisma className={'text-[27px] text-slate-500'} />
+          <SiMongodb className={'text-[27px] text-green-500'} />
+        </>
+
+      }
+
       {/* {title === 'CRM de Clientes' &&
         <>
           <SiJavascript className={'text-[27px] text-yellow-400'} />
