@@ -1,7 +1,7 @@
 'use client'
 
 import { FaReact, FaStripe, FaSass, FaBootstrap } from 'react-icons/fa'
-import { SiFirebase, SiPrisma, SiSupabase, SiMongodb } from 'react-icons/si'
+import { SiFirebase, SiPrisma, SiSupabase, SiMongodb, SiSocketdotio } from 'react-icons/si'
 import { SiJavascript, SiTailwindcss, SiNextdotjs, SiTypescript } from 'react-icons/si'
 
 const CardTechDisplayed = ({ title }) => {
@@ -9,6 +9,17 @@ const CardTechDisplayed = ({ title }) => {
 
   return (
     <div className={'flex gap-3'}>
+
+      {
+        title === 'Discord Clone' && (
+          <>
+            <SiNextdotjs className={'text-[27px] text-gray-500'} />
+            <SiTypescript className={'text-[27px] text-cyan-400'} />
+            <SiTailwindcss className={'text-[27px] text-cyan-400'} />
+            <SiSocketdotio className={'text-[27px] text-black'} />
+          </>
+        )
+      }
 
       {title === 'Four Frame' &&
         <>

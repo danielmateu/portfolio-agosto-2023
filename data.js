@@ -37,6 +37,12 @@ import {
     my_places_5
 } from './public/projects/my_places'
 
+import {
+    discord,
+    discor_2
+} from './public/projects/discord'
+
+
 
 import { crm_clientes, crm_clientes_2, crm_clientes_3 } from './public/projects/crm_clientes';
 import { tic_tac_toe } from './public/projects/tic_tac_toe';
@@ -46,6 +52,24 @@ import { guitarla } from './public/projects/guitarla';
 import { calendar } from './public/projects/mern_calendar';
 
 export const data = [
+    {
+        id: 13,
+        title: 'Discord Clone',
+        description: 'Clon de Discord, en el que se puede chatear con los usuarios que estén conectados.',
+        img: discord,
+        urlDeploy: 'https://discord-nuk-14afb897aa1f.herokuapp.com/invite/d837f8f1-f515-4eb2-aaa1-68101d6929d7',
+        urlRepo: 'https://github.com/danielmateu/discord_clone',
+        sliderImages: [
+            {
+                id: 1,
+                img: discord,
+            },
+            {
+                id: 2,
+                img: discor_2,
+            },
+        ]
+    },
     {
         id: 1,
         title: 'Nuko AI',
@@ -250,6 +274,7 @@ export const data = [
         urlDeploy: 'https://mern-calendar-dmateu.herokuapp.com/',
         urlRepo: 'https://github.com/danielmateu/calendar-mern-revisited',
     },
+
 
 
 ];
