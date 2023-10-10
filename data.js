@@ -52,24 +52,24 @@ import { guitarla } from './public/projects/guitarla';
 import { calendar } from './public/projects/mern_calendar';
 
 export const data = [
-    // {
-    //     id: 13,
-    //     title: 'Discord Clone',
-    //     description: 'Clon de Discord, en el que se puede chatear con los usuarios que estén conectados.',
-    //     img: discord,
-    //     urlDeploy: 'https://discord-nuk-14afb897aa1f.herokuapp.com/invite/d837f8f1-f515-4eb2-aaa1-68101d6929d7',
-    //     urlRepo: 'https://github.com/danielmateu/discord_clone',
-    //     sliderImages: [
-    //         {
-    //             id: 1,
-    //             img: discord,
-    //         },
-    //         {
-    //             id: 2,
-    //             img: discor_2,
-    //         },
-    //     ]
-    // },
+    {
+        id: 13,
+        title: 'Discord Clone',
+        description: 'Clon de Discord, en el que se puede chatear con los usuarios que estén conectados.',
+        img: discord,
+        urlDeploy: 'https://nukitord-8fcd1b4a9158.herokuapp.com/',
+        urlRepo: 'https://github.com/danielmateu/discord_clone',
+        sliderImages: [
+            {
+                id: 1,
+                img: discord,
+            },
+            {
+                id: 2,
+                img: discor_2,
+            },
+        ]
+    },
     {
         id: 1,
         title: 'Nuko AI',
