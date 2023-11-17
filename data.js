@@ -298,7 +298,4 @@ export const data = [
         urlDeploy: 'https://mern-calendar-dmateu.herokuapp.com/',
         urlRepo: 'https://github.com/danielmateu/calendar-mern-revisited',
     },
-
-
-
 ];

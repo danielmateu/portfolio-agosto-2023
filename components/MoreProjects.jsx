@@ -4,7 +4,7 @@ import Context from '@/app/context/Context'
 import { useContext } from 'react'
 
 import Image from 'next/image'
-import { SiGraphql, SiNextdotjs, SiTailwindcss, SiJavascript, SiReact } from 'react-icons/si'
+import { SiGraphql, SiNextdotjs, SiTailwindcss, SiJavascript, SiReact, SiTypescript, SiMongodb } from 'react-icons/si'
 
 import { RxRocket } from 'react-icons/rx'
 import { AiOutlineGithub } from 'react-icons/ai'
@@ -26,7 +26,7 @@ const MoreProjects = () => {
 
         <div className='w-full max-w-[350px] md:max-w-[800px] md:pl-3  lg:max-w-[1000px]  '>
 
-          <h2 className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} text-3xl self-start m-auto mt-[100px] mb-[60px] ml-5  lg:ml-2   flex`}>Más proyectos 
+          <h2 className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} text-3xl self-start m-auto mt-[100px] mb-[60px] ml-5  lg:ml-2   flex`}>Más proyectos
           </h2>
         </div>
       </div>
@@ -59,10 +59,9 @@ const MoreProjects = () => {
 
 
             <div className='flex justify-between items-center w-full pt-4 '>
-              <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'} text-sm `}>Techs used: </span>
+              <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'} text-sm `}>Stack usado: </span>
 
               {project.title === 'CRM de Clientes' &&
-
                 <div className='flex gap-2'>
                   <SiNextdotjs className={'text-[27px] text-gray-500'} />
                   <SiJavascript className={'text-[27px] text-yellow-400'} />
@@ -70,7 +69,6 @@ const MoreProjects = () => {
                   <SiGraphql className={'text-[27px] text-pink-600'} />
                 </div>
               }
-
               {
                 project.title === 'Tic Tac Toe' &&
 
@@ -108,6 +106,43 @@ const MoreProjects = () => {
                 <div className='flex gap-2'>
                   <SiReact className={'text-[27px] text-blue-500'} />
                   <BsBootstrap className={'text-[27px] text-purple-600'} />
+                </div>
+              }
+
+              {
+                project.title === 'My Places' &&
+                <div className='flex gap-2'>
+                  <SiReact className={'text-[27px] text-blue-500'} />
+                  <SiTailwindcss className={'text-[27px] text-cyan-400'} />
+                  <SiMongodb className={'text-[27px] text-green-500'} />
+                </div>
+              }
+
+              {
+                project.title === 'Notion Clone' &&
+                <div className='flex gap-2'>
+                  <SiNextdotjs className={'text-[27px] text-gray-500'} />
+                  <SiTailwindcss className={'text-[27px] text-cyan-400'} />
+                  <SiTypescript className={'text-[27px] text-blue-500'} />
+                </div>
+              }
+
+              {
+                project.title === 'Four Frame' &&
+                <div className='flex gap-2'>
+                  <SiNextdotjs className={'text-[27px] text-gray-500'} />
+                  <SiTailwindcss className={'text-[27px] text-cyan-400'} />
+                  <SiTypescript className={'text-[27px] text-blue-500'} />
+                </div>
+              }
+
+              {
+                project.title === 'Solid Camper Store' &&
+                <div className='flex gap-2'>
+                  <SiNextdotjs className={'text-[27px] text-gray-500'} />
+                  <SiTailwindcss className={'text-[27px] text-cyan-400'} />
+                  <SiTypescript className={'text-[27px] text-blue-500'} />
+                  <SiMongodb className={'text-[27px] text-green-500'} />
                 </div>
               }
 
