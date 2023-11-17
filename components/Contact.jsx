@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 
-import { ChakraProvider} from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 
 import { AiFillLinkedin, AiOutlineInstagram, AiFillGithub } from 'react-icons/ai'
 
@@ -32,35 +32,28 @@ function Contact() {
 
           <div className={'w-full max-w-[400px] flex flex-col justify-center items-center  '}>
 
-            <h6 className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'} text-3xl lg:text-4xl font-semibold flex relative ml-5 mr-5`}>  
-            Quieres contactar?</h6>
+            <h6 className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'} text-3xl lg:text-4xl font-semibold flex relative ml-5 mr-5`}>
+              Quieres contactar?</h6>
 
             <a href="mailto:danielmateu86@gmail.com" target='_blank'
               className={'mt-10 self-center'}
             >
-              <SiGmail className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#79d2e2] transition-all duration-200 cursor-pointer`} />
+              <SiGmail className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-sky-500 transition-all duration-200 cursor-pointer`} />
             </a>
 
             <h6 className={`${theme === 'dark' ? 'text-gray-300' : 'text-gray-800'} text-xl font-medium text-left self-left mt-10 self-center`}>Redes sociales: </h6>
             <div className={'flex gap-5 mt-5 mb-10 self-center'}>
               <a href="https://www.linkedin.com/in/daniel-mateu-pardo/" target='_blank'>
-                <AiFillLinkedin className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#79d2e2] transition-all duration-200 cursor-pointer`} />
-
+                <AiFillLinkedin className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-sky-500 transition-all duration-200 cursor-pointer`} />
               </a>
 
               <a href="https://www.instagram.com/danimateu86/" target='_blank'>
-                <AiOutlineInstagram className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#79d2e2] transition-all duration-200 cursor-pointer`} />
-
+                <AiOutlineInstagram className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-sky-500 transition-all duration-200 cursor-pointer`} />
               </a>
 
               <a href="https://github.com/danielmateu" target='_blank'>
-                <AiFillGithub className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#79d2e2] transition-all duration-200 cursor-pointer`} />
-
+                <AiFillGithub className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-sky-500 transition-all duration-200 cursor-pointer`} />
               </a>
-
-              {/* Gmail */}
-
-
 
             </div>
 

@@ -48,8 +48,8 @@ const ProjectCard = ({ title, img, description, urlDeploy, urlRepo, sliderImages
           <h3 className={`${theme !== 'dark' ? 'text-gray-800' : 'text-white'} ml-1   text-lg font-medium z-50 lg:text-xl`}>{title} </h3>
 
           <div className={'pb-4 self-start ml-1 flex gap-4 '}>
-            <a href={urlRepo} target='_blank' className={'flex flex-col text-xs text-[#79d2e2]'}><AiOutlineGithub className={'text-[24px] cursor-pointer  hover:opacity-80'} /></a>
-            <a href={urlDeploy} target='_blank' > <RxRocket className={'text-[24px]  text-[#79d2e2] cursor-pointer  hover:opacity-80 '} /></a>
+            <a href={urlRepo} target='_blank' className={'flex flex-col text-xs text-sky-500'}><AiOutlineGithub className={'text-[24px] cursor-pointer  hover:opacity-80'} /></a>
+            <a href={urlDeploy} target='_blank' > <RxRocket className={'text-[24px]  text-sky-500 cursor-pointer  hover:opacity-80 '} /></a>
           </div>
         </div>
 

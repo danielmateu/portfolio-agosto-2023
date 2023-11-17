@@ -60,8 +60,8 @@ const AboutMe = () => {
 
         <MyStudies />
 
-        <div className={` mt-20 ${theme !== 'dark' ? 'text-[#262737]' : 'text-gray-200'}    text-lg mb-10`}>
-          <p className={' font-medium'}>Descarga mi cv  <a href={cv} download={true} className={'text-sky-500 font-semibold'} >aquí!</a> </p>
+        <div className={`mt-20 ${theme !== 'dark' ? 'text-[#262737]' : 'text-gray-200'}    text-lg mb-10`}>
+          <p className={'font-medium'}>Descarga mi cv  <a href={cv} download={true} className={'text-sky-500 font-semibold hover:underline'} >aquí!</a> </p>
         </div>
 
       </motion.div>

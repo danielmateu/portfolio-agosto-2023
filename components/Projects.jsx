@@ -22,7 +22,7 @@ const Projects = () => {
 
     <section className={`flex flex-col items-center z-50  w-full ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-100'} relative z-100`} id='projects' >
 
-      <div className={'bg-[#79d2e2] left-[-100px] top-[50%] blur-[80px] h-[120px] w-[120px] md:h-[150px] md:w-[150px] md:blur-[100px] lg:h-[200px] lg:w-[200px] lg:blur-[130px] absolute xl:h-[300px] xl:w-[250px] xl:blur-[200px]'}></div>
+      <div className={'bg-sky-500 left-[-100px] top-[50%] blur-[80px] h-[120px] w-[120px] md:h-[150px] md:w-[150px] md:blur-[100px] lg:h-[200px] lg:w-[200px] lg:blur-[130px] absolute xl:h-[300px] xl:w-[250px] xl:blur-[200px]'}></div>
 
       <div className={'w-full max-w-[1200px] flex flex-col justify-center items-center z-10'}>
 
@@ -55,7 +55,7 @@ const Projects = () => {
       </div>
       <motion.div className='mb-20 mt-20' initial={{ y: 150 }} whileInView={{ y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
 
-        <a href="#contact" className={` text-base border-[1px] font-regular border-[#79d2e2] py-[8px] px-7 rounded-[5px] ${theme === 'dark' ? 'text-white' : 'text-gray-800'} transition-all duration-200 hover:bg-[#79d2e2] `}>Contacta conmigo!</a>
+        <a href="#contact" className={` text-base border-[1px] font-regular border-sky-500 py-[8px] px-7 rounded-[5px] ${theme === 'dark' ? 'text-white' : 'text-gray-800'} transition-all duration-200 hover:bg-sky-500 `}>Contacta conmigo!</a>
       </motion.div>
     </section>
   )

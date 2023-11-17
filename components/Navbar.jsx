@@ -40,12 +40,12 @@ export default function Example() {
               </div>
               <div className={"flex flex-1 py-4 items-center sm:items-center sm:justify-between"}>
                 <div className={"flex flex-shrink-0 m-auto sm:m-0 items-center"}>
-                    <Image width={40} height={40}
-                      className={"hidden w-auto sm:inline scale-90 transition"}
-                      src={logo}
-                      alt="Portfolio logo"
-                    />
-                    {/* </span></Link> */}
+                  <Image width={40} height={40}
+                    className={"hidden w-auto sm:inline scale-90 transition"}
+                    src={logo}
+                    alt="Portfolio logo"
+                  />
+                  {/* </span></Link> */}
                 </div>
                 <div className={"hidden sm:block"}>
                   <div className={"flex "}>
@@ -53,7 +53,7 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-[#79d2e2] transition-all duration-200 font-medium `}
+                        className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
