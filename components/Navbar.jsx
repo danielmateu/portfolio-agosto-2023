@@ -19,13 +19,8 @@ const navigation = [
   { name: 'Contacto', href: '#contact', current: true },
 ]
 
-
 export default function Example() {
-
-
   const [theme, setTheme] = useContext(Context)
-
-
   return (
     <Disclosure as="nav" className={` ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-50'} fixed w-full z-[500]`}>
       {({ open }) => (
@@ -45,23 +40,14 @@ export default function Example() {
               </div>
               <div className={"flex flex-1 py-4 items-center sm:items-center sm:justify-between"}>
                 <div className={"flex flex-shrink-0 m-auto sm:m-0 items-center"}>
-                  <Link href={'#'}>
-                    <Image width={100} height={100}
-                      className={"block h-20 w-auto lg:hidden scale-90 transition cursor-pointer"}
+                    <Image width={40} height={40}
+                      className={"hidden w-auto sm:inline scale-90 transition"}
                       src={logo}
-                      href={'#'}
                       alt="Portfolio logo"
                     />
-                  </Link>
-                  {/*  */}
-                  <Link href={'#'}><span className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} text-2xl font-semibold ml-2`}>
-                    <Image width={100} height={100}
-                      className={"hidden h-20 w-auto lg:inline scale-90 transition cursor-pointer"}
-                      src={logo}
-                      alt="Portfolio logo"
-                    /></span></Link>
+                    {/* </span></Link> */}
                 </div>
-                <div className={"hidden  sm:block"}>
+                <div className={"hidden sm:block"}>
                   <div className={"flex "}>
                     {navigation.map((item) => (
                       <a
@@ -81,7 +67,6 @@ export default function Example() {
 
             </div>
           </div>
-
           {/* MOBILE MENU */}
 
           <Disclosure.Panel className={"sm:hidden"}>
