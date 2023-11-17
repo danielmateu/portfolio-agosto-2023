@@ -2,18 +2,15 @@
 
 import Image from 'next/image'
 
-import { ChakraProvider, FormErrorMessage, useToast, FormControl, FormLabel, Input, Textarea, Button } from '@chakra-ui/react'
+import { ChakraProvider} from '@chakra-ui/react'
 
-import triangle from '../public/assets/triangle.webp'
 import { AiFillLinkedin, AiOutlineInstagram, AiFillGithub } from 'react-icons/ai'
 
 import avatar from '../public/assets/fullbodyAvatar.webp'
 
 import Context from '@/app/context/Context'
 
-import { useContext, useState } from 'react'
-
-import { enviarFormulario, sendForm } from '@/lib/sendFrom'
+import { useContext } from 'react'
 
 import { motion } from 'framer-motion'
 import { SiGmail } from 'react-icons/si'
@@ -26,64 +23,7 @@ const initState = { values: initValues }
 
 function Contact() {
 
-  const toast = useToast()
-
   const [theme, setTheme] = useContext(Context)
-
-  const [state, setState] = useState(initState)
-
-  const [valueChange, setValueChange] = useState({})
-
-  const { values, isLoading } = state
-
-
-  const handleChange = ({ target }) => setState((prev) => ({
-    ...prev,
-    values: {
-      ...prev.values,
-      [target.name]: target.value
-    },
-  }))
-
-  const onBlur = ({ target }) => setValueChange((prevState) => ({
-    ...prevState,
-
-    [target.name]: true
-  }))
-
-  const onSubmit = async () => {
-
-    if (values.name === '' || values.email === '' || values.msg === '') {
-
-      toast({
-        title: 'Falta completar algún campo!',
-        description: 'Rellena todos los campos para poder enviar el mensaje.',
-        status: 'error',
-        duration: '4500',
-        isClosable: true
-      })
-    } else {
-      setState((prev) => ({
-        ...prev,
-        isLoading: true
-      }))
-      // enviarFormulario(values)
-      await sendForm(values)
-      setValueChange({})
-      setState(initState)
-      toast({
-        title: 'Mensaje enviado!',
-        description: "Gracias por contactar conmigo, te responderé lo antes posible.",
-        status: 'success',
-        position: "top",
-        duration: 2500,
-        isClosable: true,
-      })
-    }
-  }
-
-
-
 
   return (
     <ChakraProvider>
@@ -92,68 +32,9 @@ function Contact() {
 
           <div className={'w-full max-w-[400px] flex flex-col justify-center items-center  '}>
 
-            <h6 className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'} text-3xl lg:text-4xl font-semibold flex relative ml-5 mr-5`}>  <Image width={30} height={15} alt='triangleDesign' src={triangle} className={' max-h-[30px] relative bottom-[-6px] left-[-10px]'} />Quieres contactar?</h6>
+            <h6 className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'} text-3xl lg:text-4xl font-semibold flex relative ml-5 mr-5`}>  
+            Quieres contactar?</h6>
 
-
-            {/* <form action="post" className={'flex flex-col w-[90%] max-w-[400px] gap-2 mt-14 self-center'}>
-
-              <FormControl isInvalid={valueChange.name && !values.name}>
-
-                <FormLabel htmlFor="name" className={`${theme === 'dark' ? 'text-gray-200' : 'text-gray-800'}  text-gray-200 font-medium `}>Name:</FormLabel>
-
-                <Input value={values.name} required onChange={handleChange}
-                  name='name'
-                  errorBorderColor='red.300'
-                  onBlur={onBlur}
-                  type="text"
-                  border={'none'}
-                  bg={`${theme !== 'dark' ? 'gray.300 ' : '#262737'}`}
-                  className={`${theme !== 'dark' ? ' text-gray-800' : ' text-gray-200'}  min-h-[40px] rounded-md p-1 pl-2 `} />
-                <FormErrorMessage>Campo requerido</FormErrorMessage>
-              </FormControl>
-
-
-              <FormControl isInvalid={valueChange.email && !values.email}>
-
-                <FormLabel htmlFor="mail" className={`${theme === 'dark' ? 'text-gray-200' : 'text-gray-800'} font-medium `}>Mail:</FormLabel>
-
-                <Input value={values.email} required onChange={handleChange}
-                  name='email'
-                  errorBorderColor='red.300'
-                  onBlur={onBlur}
-                  border={'none'}
-                  type="mail"
-                  bg={`${theme !== 'dark' ? 'gray.300 ' : '#262737'}`}
-                  className={` ${theme !== 'dark' ? ' text-gray-800' : 'text-gray-200'}   min-h-[40px] rounded-md p-1 pl-2 `} />
-                <FormErrorMessage>Campo requerido</FormErrorMessage>
-
-              </FormControl>
-
-              <FormControl isInvalid={valueChange.msg && !values.msg}>
-                <FormLabel htmlFor="message" className={`${theme === 'dark' ? 'text-gray-200' : 'text-gray-800'} font-medium `}>Message:</FormLabel>
-
-                <Textarea value={values.msg} required onChange={handleChange}
-                  name="msg"
-                  errorBorderColor='red.300'
-                  onBlur={onBlur}
-                  border={'none'}
-                  cols="30"
-                  rows="10"
-                  bg={`${theme !== 'dark' ? 'gray.300 ' : '#262737'}`}
-                  className={`${theme !== 'dark' ? ' text-gray-800' : ' text-gray-200'} rounded-md  p-1 pl-2`}></Textarea>
-
-                <FormErrorMessage>Campo requerido</FormErrorMessage>
-              </FormControl>
-
-
-              <Button onClick={(e) => e.preventDefault() & onSubmit()}
-                isLoading={isLoading}
-                bg={'#8222b9'}
-                _hover={'#8222b9'}
-                className={' text-base border-[1px] font-regular border-[#79d2e2]  py-[6px] px-9 mt-3 rounded-[5px] text-white transition-all duration-200 hover:opacity-80  lg:text-lg'}>
-                Enviar
-              </Button>
-            </form> */}
             <a href="mailto:danielmateu86@gmail.com" target='_blank'
               className={'mt-10 self-center'}
             >

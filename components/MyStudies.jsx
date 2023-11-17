@@ -1,23 +1,17 @@
 'use client'
 
 import { BsDot } from 'react-icons/bs'
-
 import Context from '@/app/context/Context'
-
 import { useContext } from 'react'
-import { TriangleDesign } from './TriangleDesign'
 
 const MyStudies = () => {
 
   const [theme, setTheme] = useContext(Context)
 
-
   const coderHouseCourses = [
     'Desarrollo Web Full Stack con React.js y Node.js',
     'Next Js',
-    // 'Javascript',
     'UX/UI Design con Figma',
-    // 'Librerías Javascript',
     'Tailwind CSS',
     'Librerías React',
     'Librerías Node.js',
@@ -45,7 +39,15 @@ const MyStudies = () => {
     'Introduction to UX',
     'Web development with html ',
     `Git y Github`,
+  ]
 
+  const cursus42 = [
+    'Shell',
+    'Prgramacioón en C',
+    'Sistemas operativos',
+    'Algoritmia',
+    'Peer learning',
+    'Desarrollo en Vim'
   ]
 
   return (
@@ -53,7 +55,7 @@ const MyStudies = () => {
       <div className={'w-full'}>
         <h6 className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-900'} text-2xl font-medium mb-12 mt-20 flex items-end relative `}>Mis estudios como programador</h6>
 
-        <div className={'w-full max-w-[1000px] flex flex-col gap-10 sm:flex-row md:gap-20 lg:gap-[120px]'}>
+        <div className={'flex gap-10 flex-wrap'}>
 
           <div>
             <span className={`${theme === 'dark' ? 'text-gray-200' : 'text-gray-800'} font-semibold text-lg ml-2 `}>
@@ -77,6 +79,22 @@ const MyStudies = () => {
             <ul className={'border-l-[2px] border-[#79d2e2] mt-5 pl-1.5 flex flex-col gap-2 '} >
 
               {educacionITCourses.map((course) => (
+
+                <li key={course} className={`flex whitespace-nowrap items-center ${theme === 'dark' ? 'text-gray-300' : 'text-gray-500'} text-sm  md:text-[15px]`}><BsDot className={'text-lg'} /> {course}</li>
+
+              ))}
+
+
+            </ul>
+          </div>
+
+          <div>
+            <span className={`${theme === 'dark' ? 'text-gray-200' : 'text-gray-800'} font-semibold text-lg ml-2 `}>
+              42 Barcelona
+            </span>
+            <ul className={'border-l-[2px] border-[#79d2e2] mt-5 pl-1.5 flex flex-col gap-2 '} >
+
+              {cursus42.map((course) => (
 
                 <li key={course} className={`flex whitespace-nowrap items-center ${theme === 'dark' ? 'text-gray-300' : 'text-gray-500'} text-sm  md:text-[15px]`}><BsDot className={'text-lg'} /> {course}</li>
 

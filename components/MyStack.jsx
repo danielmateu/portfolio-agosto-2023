@@ -3,14 +3,9 @@
 import { FaReact } from 'react-icons/fa'
 import { SiNextdotjs, SiJavascript, SiTailwindcss, SiFirebase, SiMongodb, SiNodedotjs, SiMysql, SiMui, SiStripe, SiSupabase } from 'react-icons/si'
 
-// import { FaSass } from 'react-icons/fa'
-
 import { FaBootstrap } from 'react-icons/fa'
 import { FaGitAlt } from 'react-icons/fa'
 import { AiOutlineGithub } from 'react-icons/ai'
-// import { IoLogoCss3 } from 'react-icons/io'
-
-// import { AiFillHtml5 } from 'react-icons/ai'
 
 import Context from '@/app/context/Context'
 
@@ -23,7 +18,7 @@ const MyStack = () => {
   return (
     <>
       {/* MY STACK */}
-      <h5 className={`${theme !== 'dark' ? 'text-[#262737]' : 'text-gray-100'}  font-medium text-2xl mb-8 mt-20 flex items-end relative `}>Tecnologías que suelo usar </h5>
+      <h5 className={`${theme !== 'dark' ? 'text-[#262737]' : 'text-gray-100'}  font-medium text-2xl mb-8 mt-20 flex items-end relative `}>Mi Stack tecnológico</h5>
 
       <div className={' flex gap-7 flex-wrap lg:w-[90%] items-center justify-center'}>
 
@@ -57,11 +52,6 @@ const MyStack = () => {
         </div>
 
         <div className={'flex flex-col justify-center '}>
-          <SiFirebase className={'text-[35px] text-orange-500  ml-1 mb-1.5 lg:text-[45px]'} />
-          <span className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm`}>Firebase</span>
-        </div>
-
-        <div className={'flex flex-col justify-center '}>
           <SiMui className={'text-[35px] text-blue-600  ml-1 mb-1.5 lg:text-[45px]'} />
           <span className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm`}>Material UI</span>
         </div>
@@ -85,11 +75,6 @@ const MyStack = () => {
           <AiOutlineGithub className={`text-[35px] ${theme === 'dark' ? 'text-white ' : 'text-gray-600'}   mb-1.5 lg:text-[45px]`} />
           <span className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm `}>Github</span>
         </div>
-
-        {/* <div className={'flex flex-col justify-center '}>
-          <SiStripe className={`text-[35px] ${theme === 'dark' ? 'text-blue-400' : 'text-blue-600'}  ml-1 mb-1.5 lg:text-[45px]`} />
-          <span className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm`}>Stripe</span>
-        </div> */}
 
         <div className={'flex flex-col justify-center '}>
           <SiSupabase className={`text-[35px] ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}  ml-1 mb-1.5 lg:text-[45px]`} />

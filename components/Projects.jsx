@@ -13,8 +13,6 @@ import Context from '@/app/context/Context'
 
 import { useContext } from 'react'
 import { data } from '@/data.js'
-import { TriangleDesign } from './TriangleDesign'
-
 
 const Projects = () => {
 
@@ -30,7 +28,8 @@ const Projects = () => {
 
         <div className={'w-full max-w-[350px] md:max-w-[800px] md:pl-3  lg:max-w-[900px]  '}>
 
-          <h2 className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} text-3xl text-start m-auto mt-[100px] mb-[60px] ml-3 lg:text-[40px]  flex`}>Mis proyectos <TriangleDesign width={30} height={30} alt='triangle design' /></h2>
+          <h2 className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} text-3xl text-start m-auto mt-[100px] mb-[60px] ml-3 lg:text-[40px]  flex`}>Mis proyectos 
+          </h2>
         </div>
 
         <div className={'w-[95%] max-w-[1000px] flex flex-col  gap-20 items-center justify-center '}>
