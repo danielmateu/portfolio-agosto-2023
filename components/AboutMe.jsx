@@ -48,9 +48,6 @@ const AboutMe = () => {
           En mi tiempo libre me gusta aprender tecnologías nuevas aplicándolas a mis proyectos personales, leer, hacer deporte y la música.
         </p>
 
-        {/* <p className={`${theme !== 'dark' ? 'text-[#484959]' : 'text-gray-400'} mb-2 text-sm font-semibold lg:w-[90%] lg:text-[15px]`}
-        >En realidad amo la música, me considero multi-instrumentista, ya que toco la <span className={''}>guitarra</span>, el <span className={''}>bajo</span>, el <span className={''}>piano</span> y la <span className={''}>batería</span>. También me gusta <span className={''}>viajar</span>, <span className={''}>conocer</span> nuevas culturas y los paseos por la montaña.</p> */}
-
         <p className={`${theme !== 'dark' ? 'text-[#484959]' : 'text-gray-400'} mb-2 text-sm font-semibold lg:w-[90%] lg:text-[15px]`}>
           Actualmente estoy trabajando en mejorar mis habilidades como desarrollador <span className={'font-bold'}>Front End</span>,  <span className={'font-bold'}>Back End</span> y <span className={'font-bold'}>Diseñador UX/UI</span>.
         </p>
