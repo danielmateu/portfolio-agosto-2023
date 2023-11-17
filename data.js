@@ -42,6 +42,11 @@ import {
     discor_2
 } from './public/projects/discord'
 
+import {
+    nukotion,
+    nukotion_3
+} from './public/projects/nukotion'
+
 
 
 import { crm_clientes, crm_clientes_2, crm_clientes_3 } from './public/projects/crm_clientes';
@@ -167,6 +172,25 @@ export const data = [
             }
         ]
     },
+    {
+        id: 14,
+        title: 'Notion Clone',
+        description: 'Clon de Notion, en el que se puede crear notas, y editarlas. Creado con React, Nextjs 13, Tailwindcss, Convex para la gestión del backend y Clerk para la autenticación',
+        img: nukotion,
+        urlDeploy: 'https://nukotion-owlh0l4w7-danielmateu.vercel.app/',
+        urlRepo: 'https://github.com/danielmateu/nukotion',
+        sliderImages: [
+            {
+                id: 1,
+                img: nukotion,
+            },
+            {
+                id: 2,
+                img: nukotion_3,
+            }
+        ]
+    }
+    ,
     {
         id: 4,
         title: 'Four Frame',
