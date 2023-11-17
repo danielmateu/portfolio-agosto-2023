@@ -51,8 +51,8 @@ const ProjectCardReverse = ({title, img,  description, urlDeploy, urlRepo,slider
       <h3 className={`${theme !== 'dark' ? 'text-gray-800' : 'text-white'} ml-1   text-lg font-medium z-50 lg:text-xl`}>{title} </h3>
 
       <div className={' pb-10 self-start ml-1 flex gap-4 '}>
-        <a href={urlRepo} target='_blank' className={'flex flex-col text-xs text-[#9333EA] hover:opacity-80 '}><AiOutlineGithub  className={'text-[24px]'}/></a>
-        <a href={urlDeploy} target='_blank' > <RxRocket className={'text-[24px]  text-[#9333EA] cursor-pointer  hover:opacity-80 '} /></a>
+        <a href={urlRepo} target='_blank' className={'flex flex-col text-xs text-[#79d2e2] hover:opacity-80 '}><AiOutlineGithub  className={'text-[24px]'}/></a>
+        <a href={urlDeploy} target='_blank' > <RxRocket className={'text-[24px]  text-[#79d2e2] cursor-pointer  hover:opacity-80 '} /></a>
       </div>
     </div> 
 

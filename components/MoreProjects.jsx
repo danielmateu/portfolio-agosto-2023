@@ -52,8 +52,8 @@ const MoreProjects = () => {
               <h6 className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'} text-lg font-semibold py-2`}>{project.title}</h6>
 
               <div className='flex gap-2'>
-                <a href={project.urlRepo} target='_blank' className={'flex flex-col text-xs text-[#9333EA]'}><AiOutlineGithub className={'text-[24px] cursor-pointer  hover:opacity-80'} /></a>
-                <a href={project.urlDeploy} target='_blank' > <RxRocket className={'text-[24px]  text-[#9333EA] cursor-pointer  hover:opacity-80 '} /></a>
+                <a href={project.urlRepo} target='_blank' className={'flex flex-col text-xs text-[#79d2e2]'}><AiOutlineGithub className={'text-[24px] cursor-pointer  hover:opacity-80'} /></a>
+                <a href={project.urlDeploy} target='_blank' > <RxRocket className={'text-[24px]  text-[#79d2e2] cursor-pointer  hover:opacity-80 '} /></a>
               </div>
 
             </div>

@@ -67,7 +67,7 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-[#9333EA] transition-all duration-200 font-medium `}
+                        className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-[#79d2e2] transition-all duration-200 font-medium `}
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}

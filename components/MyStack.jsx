@@ -56,12 +56,6 @@ const MyStack = () => {
           <span className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm`}>MySQL</span>
         </div>
 
-
-        {/* <div className={'flex flex-col justify-center '}>
-          <FaSass className={'text-[35px] text-pink-400   mb-1.5 lg:text-[45px]'} />
-          <span className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm ml-1`}>Scss</span>
-        </div> */}
-
         <div className={'flex flex-col justify-center '}>
           <SiFirebase className={'text-[35px] text-orange-500  ml-1 mb-1.5 lg:text-[45px]'} />
           <span className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm`}>Firebase</span>
@@ -92,10 +86,10 @@ const MyStack = () => {
           <span className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm `}>Github</span>
         </div>
 
-        <div className={'flex flex-col justify-center '}>
+        {/* <div className={'flex flex-col justify-center '}>
           <SiStripe className={`text-[35px] ${theme === 'dark' ? 'text-blue-400' : 'text-blue-600'}  ml-1 mb-1.5 lg:text-[45px]`} />
           <span className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm`}>Stripe</span>
-        </div>
+        </div> */}
 
         <div className={'flex flex-col justify-center '}>
           <SiSupabase className={`text-[35px] ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}  ml-1 mb-1.5 lg:text-[45px]`} />

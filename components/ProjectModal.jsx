@@ -146,9 +146,9 @@ const ProjectModal = ({ title, description, urlDeploy, urlRepo, state, sliderIma
                   <div className='w-auto h-auto flex gap-4'>
 
 
-                    <Link href={urlDeploy} target='_blank' name='deploy' className=' text-xs rounded-lg  sm:text-sm font-semibold px-10  py-[10px]  text-gray-50 shadow-sm sm:mt-1   transition duration-200 bg-[#9333EA] hover:opacity-90 '>Visit</Link>
+                    <Link href={urlDeploy} target='_blank' name='deploy' className=' text-xs rounded-lg  sm:text-sm font-semibold px-10  py-[10px]  text-gray-50 shadow-sm sm:mt-1   transition duration-200 bg-[#79d2e2] hover:opacity-90 '>Visit</Link>
 
-                    <Link href={urlRepo} target='_blank' name='repo' className={` text-xs rounded-lg  sm:text-sm font-semibold px-4 py-[10px] border border-[#9333EA]  ${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} shadow-sm sm:mt-1  transition duration-200 hover:bg-[#9333EA] hover:text-white  `}>Repository</Link>
+                    <Link href={urlRepo} target='_blank' name='repo' className={` text-xs rounded-lg  sm:text-sm font-semibold px-4 py-[10px] border border-[#79d2e2]  ${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} shadow-sm sm:mt-1  transition duration-200 hover:bg-[#79d2e2] hover:text-white  `}>Repository</Link>
                   </div>
 
                   <button

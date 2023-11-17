@@ -150,30 +150,30 @@ function Contact() {
                 isLoading={isLoading}
                 bg={'#8222b9'}
                 _hover={'#8222b9'}
-                className={' text-base border-[1px] font-regular border-[#9333EA]  py-[6px] px-9 mt-3 rounded-[5px] text-white transition-all duration-200 hover:opacity-80  lg:text-lg'}>
+                className={' text-base border-[1px] font-regular border-[#79d2e2]  py-[6px] px-9 mt-3 rounded-[5px] text-white transition-all duration-200 hover:opacity-80  lg:text-lg'}>
                 Enviar
               </Button>
             </form> */}
             <a href="mailto:danielmateu86@gmail.com" target='_blank'
               className={'mt-10 self-center'}
             >
-              <SiGmail className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#9333EA] transition-all duration-200 cursor-pointer`} />
+              <SiGmail className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#79d2e2] transition-all duration-200 cursor-pointer`} />
             </a>
 
             <h6 className={`${theme === 'dark' ? 'text-gray-300' : 'text-gray-800'} text-xl font-medium text-left self-left mt-10 self-center`}>Redes sociales: </h6>
             <div className={'flex gap-5 mt-5 mb-10 self-center'}>
               <a href="https://www.linkedin.com/in/daniel-mateu-pardo/" target='_blank'>
-                <AiFillLinkedin className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#9333EA] transition-all duration-200 cursor-pointer`} />
+                <AiFillLinkedin className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#79d2e2] transition-all duration-200 cursor-pointer`} />
 
               </a>
 
               <a href="https://www.instagram.com/danimateu86/" target='_blank'>
-                <AiOutlineInstagram className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#9333EA] transition-all duration-200 cursor-pointer`} />
+                <AiOutlineInstagram className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#79d2e2] transition-all duration-200 cursor-pointer`} />
 
               </a>
 
               <a href="https://github.com/danielmateu" target='_blank'>
-                <AiFillGithub className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#9333EA] transition-all duration-200 cursor-pointer`} />
+                <AiFillGithub className={`text-[30px] ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} scale-100 hover:scale-110 hover:text-[#79d2e2] transition-all duration-200 cursor-pointer`} />
 
               </a>
 

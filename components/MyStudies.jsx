@@ -60,7 +60,7 @@ const MyStudies = () => {
               Másters Online
             </span>
 
-            <ul className={'border-l-[2px] border-[#9333EA] mt-5 pl-1.5 flex flex-col gap-2  '}>
+            <ul className={'border-l-[2px] border-[#79d2e2] mt-5 pl-1.5 flex flex-col gap-2  '}>
 
               {coderHouseCourses.map((course) => (
                 <li key={course} className={`flex whitespace-nowrap items-center ${theme === 'dark' ? 'text-gray-300' : 'text-gray-500'} text-sm  md:text-[15px]`}><BsDot className={'text-lg'} /> {course} </li>
@@ -74,7 +74,7 @@ const MyStudies = () => {
             <span className={`${theme === 'dark' ? 'text-gray-200' : 'text-gray-800'} font-semibold text-lg ml-2 `}>
               IT Academy
             </span>
-            <ul className={'border-l-[2px] border-[#9333EA] mt-5 pl-1.5 flex flex-col gap-2 '} >
+            <ul className={'border-l-[2px] border-[#79d2e2] mt-5 pl-1.5 flex flex-col gap-2 '} >
 
               {educacionITCourses.map((course) => (
 
