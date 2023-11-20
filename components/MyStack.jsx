@@ -76,11 +76,10 @@ const MyStack = () => {
           <span className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm `}>Github</span>
         </div>
 
-        <div className={'flex flex-col justify-center '}>
+        {/* <div className={'flex flex-col justify-center '}>
           <SiSupabase className={`text-[35px] ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}  ml-1 mb-1.5 lg:text-[45px]`} />
           <span className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm`}>Supabase</span>
-        </div>
-
+        </div> */}
       </div>
     </>
   )

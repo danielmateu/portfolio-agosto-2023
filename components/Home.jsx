@@ -16,6 +16,8 @@ import bg from '../public/assets/bg.svg'
 import bg2 from '../public/assets/bg-2.svg'
 import bgWhite from '../public/assets/bg-white.svg'
 import bgWhite2 from '../public/assets/bg-white-2.svg'
+import Link from 'next/link'
+import Contact from './Contact'
 
 const Home = () => {
 

@@ -15,15 +15,10 @@ export default function Page() {
 
     <main className="main-container min-h-[100vh]  w-full flex flex-col items-center justify-center ">
       <Home />
-
       <Projects />
-
       <MoreProjects />
-
       <AboutMe />
-
       <Contact />
-
     </main>
   )
 }
