@@ -88,13 +88,13 @@ const CardTechDisplayed = ({ title }) => {
 
       }
 
-      {/* {title === 'CRM de Clientes' &&
+      {title === 'CRM de Clientes' &&
         <>
           <SiJavascript className={'text-[27px] text-yellow-400'} />
           <FaSass className={'text-[27px] text-pink-600'} />
           <FaBootstrap className={'text-[27px] text-purple-600'} />
         </>
-      } */}
+      }
     </div>
   )
 }
