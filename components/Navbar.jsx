@@ -1,26 +1,39 @@
 'use client'
 
-import '../app/globals.css'
+import '../app/[locale]/globals.css'
 
 import { Disclosure, } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import '../app/globals.css'
+
 import logo from '../public/assets/logo.webp'
 import Context from '@/app/context/Context'
 import { useContext } from 'react'
 import Image from 'next/image'
 import ThemeToggler from './ThemeToggler'
-import Link from 'next/link'
+
+import { useTranslations } from 'next-intl';
+
+import { Link } from '../navigation'
+
 
 const navigation = [
-  { name: 'Inicio', href: '#', current: true },
-  { name: 'Proyectos', href: '#projects', current: true },
-  { name: 'Sobre mi', href: '#aboutme', current: true },
-  { name: 'Contacto', href: '#contact', current: true },
+  { name: 'Inicio', href: '#', current: false, t: 'home' },
+  { name: 'Proyectos', href: '#projects', current: false, t: 'projects' },
+  { name: 'Sobre mi', href: '#aboutme', current: false, t: 'aboutme' },
+  { name: 'Contacto', href: '#contact', current: false, t: 'contact' },
+]
+
+const lenguageNavigation = [
+  { name: 'Eng', href: '/', locale: 'en' },
+  { name: 'Cas', href: '/', locale: 'es' },
+  { name: 'Cat', href: '/', locale: 'cat' },
 ]
 
 export default function Example() {
   const [theme, setTheme] = useContext(Context)
+
+  const t = useTranslations('Index');
+
   return (
     <Disclosure as="nav" className={` ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-50'} fixed w-full z-[500]`}>
       {({ open }) => (
@@ -45,7 +58,6 @@ export default function Example() {
                     src={logo}
                     alt="Portfolio logo"
                   />
-                  {/* </span></Link> */}
                 </div>
                 <div className={"hidden sm:block"}>
                   <div className={"flex "}>
@@ -56,19 +68,26 @@ export default function Example() {
                         className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}
                         aria-current={item.current ? 'page' : undefined}
                       >
-                        {item.name}
+                        {t(item.t)}
                       </a>
                     ))}
                   </div>
                 </div>
-
+                <div className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} flex gap-2 font-extralight text-xs`}>
+                  {
+                    lenguageNavigation.map((item) => (
+                      <Link key={item.name} href={item.href} locale={item.locale} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} text-xs hover:text-sky-500 transition-all duration-200 font-medium `}>
+                        {item.name}
+                      </Link>
+                    ))
+                  }
+                </div>
                 <ThemeToggler />
               </div>
 
             </div>
           </div>
           {/* MOBILE MENU */}
-
           <Disclosure.Panel className={"sm:hidden"}>
             <div className={"space-y-1 px-2 pb-3 pt-2"}>
               {navigation.map((item) => (
@@ -79,9 +98,10 @@ export default function Example() {
                   className={`${theme === 'dark' ? ' text-white' : 'text-gray-800'} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
                   aria-current={item.current ? 'page' : undefined}
                 >
-                  {item.name}
+                  {t(item.t)}
                 </Disclosure.Button>
               ))}
+
             </div>
           </Disclosure.Panel>
         </>

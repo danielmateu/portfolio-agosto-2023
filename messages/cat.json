@@ -1,0 +1,13 @@
+{
+  "Index": {
+    "home": "Inici",
+    "projects": "Projectes",
+    "aboutme": "Sobre mi",
+    "contact": "Contacte",
+    "title": "Portfoli de Daniel Mateu",
+    "welcome": "Benvingut al portfoli de:",
+    "description": "Desenvolupador Front End amb amplia experiència amb el Back End. Apassionat de la tecnologia i la programació.",
+    "btnleft": "Veure projectes",
+    "btnright": "Vols contactar?"
+  }
+}

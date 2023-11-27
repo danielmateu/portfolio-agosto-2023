@@ -1,0 +1,16 @@
+{
+  "Index": {
+    "home": "Home",
+    "projects": "Projects",
+    "aboutme": "About me",
+    "contact": "Contact",
+    "title": "Daniel Mateu's Portfolio",
+    "welcome": "Welcome to my portfolio",
+    "description": "Front End Developer with extensive Back End experience.",
+    "btnleft": "See my projects",
+    "btnright": "Contact me"
+  },
+  "Projects": {
+    "title": "My Projects"
+  }
+}

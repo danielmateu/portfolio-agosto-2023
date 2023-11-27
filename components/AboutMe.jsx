@@ -1,6 +1,6 @@
 'use client'
 
-import '../app/globals.css'
+import '../app/[locale]/globals.css'
 import darkBox from '../public/assets/darkBoxDesign.webp'
 import Image from 'next/image'
 
