@@ -39,5 +39,9 @@
   "Contact": {
     "title": "Quieres contactar?",
     "socialMedia": "Mis redes sociales"
+  },
+  "Footer": {
+    "title": "Desarrollado con",
+    "and": "y"
   }
 }

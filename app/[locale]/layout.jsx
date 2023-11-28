@@ -18,6 +18,7 @@ export default function RootLayout({ children, params: { locale } }) {
 
   const t = useTranslations('Index');
   const n = useTranslations('Navbar');
+  const f = useTranslations('Footer');
 
   return (
     <html lang={locale}>
@@ -37,7 +38,10 @@ export default function RootLayout({ children, params: { locale } }) {
               contact={n('contact')}
             />
             {children}
-            <Footer />
+            <Footer
+              title={f('title')}
+              and={f('and')}
+            />
           </NextIntlClientProvider>
         </ThemeContext>
       </body>

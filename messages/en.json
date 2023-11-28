@@ -39,5 +39,9 @@
   "Contact": {
     "title": "Contact me!",
     "socialMedia": "My social media"
+  },
+  "Footer": {
+    "title": "Developed with",
+    "and": "&"
   }
 }
