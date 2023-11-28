@@ -10,8 +10,8 @@
   },
   "Navbar": {
     "home": "Home",
-    "about": "About",
-    "projects": "Projects",
+    "about": "About me",
+    "projects": "My projects",
     "contact": "Contact"
   },
   "Projects": {

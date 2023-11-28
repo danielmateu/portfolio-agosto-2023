@@ -17,21 +17,26 @@ export default function Page() {
   const download = useTranslations('Download');
   const c = useTranslations('Contact');
 
+  
+
   return (
     <main className="main-container min-h-[100vh]  w-full flex flex-col items-center justify-center ">
       <Languages />
       <Home
+        id="#"
         button={t("button")}
         contactButton={t("contactButton")}
         homeTitle={t("home_title")}
         homeDescription={t("home_description")}
       />
       <Projects
+        id="#projects"
         title={p("title")}
         contactButton={p("contactButton")}
       />
       <MoreProjects />
       <AboutMe
+        id="#aboutme"
         title={par("title")}
         firstParagraph={par("firstParagraph")}
         secondParagraph={par("secondParagraph")}
@@ -46,6 +51,7 @@ export default function Page() {
         downloadButton={download("downloadButton")}
       />
       <Contact
+        id="#contact"
         title={c("title")}
         socialMedia={c("socialMedia")}
       />

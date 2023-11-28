@@ -11,13 +11,7 @@ import { useContext } from 'react'
 import Image from 'next/image'
 import ThemeToggler from './ThemeToggler'
 import Link from 'next/link'
-
-const navigation = [
-  { name: 'Inicio', href: '#', current: true },
-  { name: 'Proyectos', href: '#projects', current: true },
-  { name: 'Sobre mi', href: '#aboutme', current: true },
-  { name: 'Contacto', href: '#contact', current: true },
-]
+import { usePathname } from 'next/navigation'
 
 export default function Navbar({
   home,
@@ -26,6 +20,9 @@ export default function Navbar({
   contact
 }) {
   const [theme] = useContext(Context)
+  const pathname = usePathname()
+
+  console.log(pathname);
   return (
     <Disclosure as="nav" className={` ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-50'} fixed w-full z-[500]`}>
       {({ open }) => (
@@ -53,8 +50,10 @@ export default function Navbar({
                 </div>
                 <div className={"hidden sm:block"}>
                   <div className={"flex "}>
-                    <a href={'#'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}>{home}</a>
-                    <a href={'#projects'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}>{projects}</a>
+                    <Link href={'#'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium`}>{home}
+                    </Link>
+                    <Link href={'#projects'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}>{projects}
+                    </Link>
                     <a href={'#aboutme'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}>{about}</a>
                     <a href={'#contact'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}>{contact}</a>
                   </div>
@@ -78,21 +77,21 @@ export default function Navbar({
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href={'#'}
+                href={'#projects'}
                 className={`${theme === 'dark' ? ' text-white' : 'text-gray-800'} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
               >
                 {projects}
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href={'#'}
+                href={'#aboutme'}
                 className={`${theme === 'dark' ? ' text-white' : 'text-gray-800'} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
               >
                 {about}
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href={'#'}
+                href={'#contact'}
                 className={`${theme === 'dark' ? ' text-white' : 'text-gray-800'} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
               >
                 {contact}
