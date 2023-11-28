@@ -11,14 +11,15 @@ import { NextIntlClientProvider, useTranslations } from 'next-intl';
 
 const locales = ['es', 'en'];
 export default function RootLayout({ children, params: { locale } }) {
+  
+  const t = useTranslations('Index');
+  const n = useTranslations('Navbar');
+  const f = useTranslations('Footer');
 
   if (!locales.includes(locale)) {
     return notFound();
   }
 
-  const t = useTranslations('Index');
-  const n = useTranslations('Navbar');
-  const f = useTranslations('Footer');
 
   return (
     <html lang={locale}>

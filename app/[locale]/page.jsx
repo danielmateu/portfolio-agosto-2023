@@ -7,9 +7,6 @@ import Contact from "@/components/Contact"
 import MoreProjects from "@/components/MoreProjects"
 import { Languages } from "@/components/Languages"
 import { useTranslations } from "next-intl"
-import MyStack from "@/components/MyStack"
-import MyStudies from "@/components/MyStudies"
-import { Download } from "@/components/Download"
 
 export default function Page() {
 
