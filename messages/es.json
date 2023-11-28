@@ -2,6 +2,20 @@
   "Index": {
     "title": "Portfolio de Daniel Mateu",
     "description": "Portfolio de Daniel Mateu, desarrollador web fullstack",
-    "icon": "https://res.cloudinary.com/daniel-mateu-pardo/image/upload/v1692264284/STK-20211030-WA0013_jc9ymw.webp"
+    "icon": "https://res.cloudinary.com/daniel-mateu-pardo/image/upload/v1692264284/STK-20211030-WA0013_jc9ymw.webp",
+    "home_title": "Bienvenido al portfolio de:",
+    "home_description": "Soy desarrollador web fullstack. Aquí puedes ver algunos de mis proyectos y contactar conmigo.",
+    "button": "Ver proyectos",
+    "contactButton": "Quieres contactar?"
+  },
+  "Navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "Projects": {
+    "title": "Mis proyectos",
+    "contactButton": "Contacta conmigo!"
   }
 }

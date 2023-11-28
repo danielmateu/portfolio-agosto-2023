@@ -10,6 +10,7 @@ import Context from '@/app/context/Context'
 import { useContext } from 'react'
 import Image from 'next/image'
 import ThemeToggler from './ThemeToggler'
+import Link from 'next/link'
 
 const navigation = [
   { name: 'Inicio', href: '#', current: true },
@@ -18,7 +19,12 @@ const navigation = [
   { name: 'Contacto', href: '#contact', current: true },
 ]
 
-export default function Example() {
+export default function Navbar({
+  home,
+  about,
+  projects,
+  contact
+}) {
   const [theme] = useContext(Context)
   return (
     <Disclosure as="nav" className={` ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-50'} fixed w-full z-[500]`}>
@@ -48,7 +54,7 @@ export default function Example() {
                 </div>
                 <div className={"hidden sm:block"}>
                   <div className={"flex "}>
-                    {navigation.map((item) => (
+                    {/* {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -57,7 +63,11 @@ export default function Example() {
                       >
                         {item.name}
                       </a>
-                    ))}
+                    ))} */}
+                    <a href={'#'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}>{home}</a>
+                    <a href={'#projects'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}>{projects}</a>
+                    <a href={'#aboutme'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}>{about}</a>
+                    <a href={'#contact'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}>{contact}</a>
                   </div>
                 </div>
 

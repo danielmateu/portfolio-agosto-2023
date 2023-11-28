@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 
 import Image from 'next/image'
 import Context from '@/app/context/Context'
@@ -12,16 +12,15 @@ import '../app/globals.css'
 
 import { motion } from 'framer-motion'
 
-import bg from '../public/assets/bg.svg'
 import bg2 from '../public/assets/bg-2.svg'
-import bgWhite from '../public/assets/bg-white.svg'
-import bgWhite2 from '../public/assets/bg-white-2.svg'
-import Link from 'next/link'
-import Contact from './Contact'
 
-const Home = () => {
+import bgWhite2 from '../public/assets/bg-white-2.svg'
+
+
+const Home = ({ button, contactButton, homeTitle, homeDescription }) => {
 
   const [theme, setTheme] = useContext(Context)
+
 
   return (
     <div className={'gradient relative w-full h-full flex flex-col items-center justify-center z-0'}>
@@ -42,16 +41,16 @@ const Home = () => {
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className={'mb-16 w-[100%] z-10 max-w-[300px] sm:max-w-[100%] sm:ml-10  lg:pr-10 lg:ml-5'}>
           <div className="flex flex-col items-center justify-center  text-center md:justify-start md:text-left md:items-start">
-            <span className={'text-[13px] text-sky-500 font-medium leading-none sm:text-[15px] md:text-[17px]'}>Bienvenido al Portfolio de:</span>
+            <span className={'text-[13px] text-sky-500 font-medium leading-none sm:text-[15px] md:text-[17px]'}>{homeTitle}</span>
             <h1 className={`text-[35px] mt-0.5 ${theme !== 'dark' ? 'text-[#1F1D2B] ' : 'text-gray-50'} font-semibold leading-none sm:text-[45px] md:text-[50px] lg:text-[60px] xl:text-[65px]`}>Daniel Mateu</h1>
-            <p className={`mt-5   ${theme !== 'dark' ? 'text-gray-600' : 'text-[#bbb]'} font-medium w-[89%] text-sm sm:w-[65%] sm:text-[16px] md:text-[18px]`}>Desarrollador Front End con amplia experiencia en Back End. </p>
+            <p className={`mt-5   ${theme !== 'dark' ? 'text-gray-600' : 'text-[#bbb]'} font-medium w-[89%] text-sm sm:w-[65%] sm:text-[16px] md:text-[18px]`}>{homeDescription}</p>
           </div>
 
           <motion.div className={'pt-8'} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }}>
             <div className='flex flex-wrap text-center gap-4 justify-center'>
 
-              <a href='#projects' className={"text-sm border-[1px] font-regular border-sky-500 bg-sky-500 py-[9px] px-9  rounded-[5px]  text-white hover:text-slate-800 transition-all duration-200 hover:opacity-80 sm:text-base lg:text-lg"}>Proyectos</a>
-              <a href='#contact' className={`bg-[#ffffff81] text-sm font-regular py-[9px] px-6 rounded-[5px] ${theme !== 'dark' ? 'text-gray-800' : 'text-[#fff]'} transition-all duration-200 hover:bg-sky-500 hover:text-white sm:text-base lg:text-lg`}>Quieres contactar?!</a>
+              <a href='#projects' className={"text-sm border-[1px] font-regular border-sky-500 bg-sky-500 py-[9px] px-9  rounded-[5px]  text-white hover:text-slate-800 transition-all duration-200 hover:opacity-80 sm:text-base lg:text-lg"}>{button}</a>
+              <a href='#contact' className={`bg-[#ffffff81] text-sm font-regular py-[9px] px-6 rounded-[5px] ${theme !== 'dark' ? 'text-gray-800' : 'text-[#fff]'} transition-all duration-200 hover:bg-sky-500 hover:text-white sm:text-base lg:text-lg`}>{contactButton}</a>
             </div>
           </motion.div>
         </motion.div>

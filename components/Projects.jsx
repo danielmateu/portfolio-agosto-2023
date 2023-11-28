@@ -14,7 +14,7 @@ import Context from '@/app/context/Context'
 import { useContext } from 'react'
 import { data } from '@/data.js'
 
-const Projects = () => {
+const Projects = ({title, contactButton}) => {
 
   const [theme] = useContext(Context)
 
@@ -28,7 +28,7 @@ const Projects = () => {
 
         <div className={'w-full max-w-[350px] md:max-w-[800px] md:pl-3  lg:max-w-[900px]  '}>
 
-          <h2 className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} text-3xl text-start m-auto mt-[100px] mb-[60px] ml-3 lg:text-[40px]  flex`}>Mis proyectos 
+          <h2 className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} text-3xl text-start m-auto mt-[100px] mb-[60px] ml-3 lg:text-[40px]  flex`}>{title}
           </h2>
         </div>
 
@@ -55,7 +55,7 @@ const Projects = () => {
       </div>
       <motion.div className='mb-20 mt-20' initial={{ y: 150 }} whileInView={{ y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
 
-        <a href="#contact" className={` text-base border-[1px] font-regular border-sky-500 py-[8px] px-7 rounded-[5px] ${theme === 'dark' ? 'text-white' : 'text-gray-800'} transition-all duration-200 hover:bg-sky-500 `}>Contacta conmigo!</a>
+        <a href="#contact" className={` text-base border-[1px] font-regular border-sky-500 py-[8px] px-7 rounded-[5px] ${theme === 'dark' ? 'text-white' : 'text-gray-800'} transition-all duration-200 hover:bg-sky-500 `}>{contactButton}</a>
       </motion.div>
     </section>
   )

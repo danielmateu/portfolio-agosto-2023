@@ -5,7 +5,9 @@ import ThemeContext from '../context/ThemeContext'
 import Footer from '@/components/Footer'
 
 import { notFound } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { NextIntlClientProvider, useTranslations } from 'next-intl';
+
+
 
 const locales = ['es', 'en'];
 export default function RootLayout({ children, params: { locale } }) {
@@ -15,6 +17,7 @@ export default function RootLayout({ children, params: { locale } }) {
   }
 
   const t = useTranslations('Index');
+  const n = useTranslations('Navbar');
 
   return (
     <html lang={locale}>
@@ -26,9 +29,16 @@ export default function RootLayout({ children, params: { locale } }) {
       </head>
       <body >
         <ThemeContext>
-          <Navbar />
-          {children}
-          <Footer />
+          <NextIntlClientProvider>
+            <Navbar
+              home={n('home')}
+              about={n('about')}
+              projects={n('projects')}
+              contact={n('contact')}
+            />
+            {children}
+            <Footer />
+          </NextIntlClientProvider>
         </ThemeContext>
       </body>
     </html>
