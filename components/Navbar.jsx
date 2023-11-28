@@ -2,7 +2,7 @@
 
 import '../app/[locale]/globals.css'
 
-import { Disclosure, } from '@headlessui/react'
+import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 import logo from '../public/assets/logo.webp'
@@ -14,7 +14,6 @@ import ThemeToggler from './ThemeToggler'
 import { useTranslations } from 'next-intl';
 
 import { Link } from '../navigation'
-
 
 const navigation = [
   { name: 'Inicio', href: '#', current: false, t: 'home' },
@@ -62,18 +61,18 @@ export default function Example() {
                 <div className={"hidden sm:block"}>
                   <div className={"flex "}>
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {t(item.t)}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
-                <div className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} flex gap-2 font-extralight text-xs`}>
+                {/* <div className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} flex gap-2 font-extralight text-xs`}>
                   {
                     lenguageNavigation.map((item) => (
                       <Link key={item.name} href={item.href} locale={item.locale} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'} text-xs hover:text-sky-500 transition-all duration-200 font-medium `}>
@@ -81,7 +80,7 @@ export default function Example() {
                       </Link>
                     ))
                   }
-                </div>
+                </div> */}
                 <ThemeToggler />
               </div>
 
