@@ -38,12 +38,9 @@ const Projects = ({title, contactButton}) => {
 
             project.reverse ? (
               <ProjectCardReverse key={project.title} title={project.title} description={project.description} img={project.img} urlDeploy={project.urlDeploy} urlRepo={project.urlRepo} sliderImages={project.sliderImages} />
-
             )
-
               :
               (
-
                 <ProjectCard key={project.title} title={project.title} description={project.description} img={project.img} urlDeploy={project.urlDeploy} urlRepo={project.urlRepo} sliderImages={project.sliderImages} />
               )
           ))}
