@@ -12,6 +12,7 @@ export default function Page() {
 
   const t = useTranslations('Index');
   const p = useTranslations('Projects');
+  const par = useTranslations('AboutMe');
 
   return (
     <main className="main-container min-h-[100vh]  w-full flex flex-col items-center justify-center ">
@@ -27,7 +28,16 @@ export default function Page() {
         contactButton={p("contactButton")}
       />
       <MoreProjects />
-      <AboutMe />
+      <AboutMe
+        title={par("title")}
+        firstParagraph={par("firstParagraph")}
+        secondParagraph={par("secondParagraph")}
+        thirdParagraph={par("thirdParagraph")}
+        fourthParagraph={par("fourthParagraph")}
+        fifthParagraph={par("fifthParagraph")}
+        sixthParagraph={par("sixthParagraph")}
+        seventhParagraph={par("seventhParagraph")}
+      />
       <Contact />
     </main>
   )

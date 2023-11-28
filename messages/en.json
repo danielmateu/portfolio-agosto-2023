@@ -17,5 +17,15 @@
   "Projects": {
     "title": "My projects",
     "contactButton": "Contact me!"
+  },
+  "AboutMe": {
+    "title": "About me",
+    "firstParagraph": "I'm a Front End Developer living in Barcelona. I consider myself a very disciplined person with a lot of attention to detail who loves to set difficult challenges.",
+    "secondParagraph": "Before the pandemic my role was as an office coordinator, managing a group of 10 colleagues in a multi-national car rental company, but due to the situation we found ourselves in, I decided to turn my life around and go into programming.",
+    "thirdParagraph": "In 2020 I started studying Front End and UX/UI Design at the IT Academy of Barcelona Activa, where I learned the most used technologies in the market, such as JavaScript, Angular, version control with Git and database management with MySQL.",
+    "fourthParagraph": "Just after finishing the course, I decided to go one step further by learning React and Node.js on my own, as they are the technologies that most caught my attention.",
+    "fifthParagraph": "In my free time I enjoy learning new technologies and applying them to my personal projects, reading, sports and music.",
+    "sixthParagraph": "I am currently working on improving my skills as a Front End Developer, Back End Developer and UX/UI Designer.",
+    "seventhParagraph": "On the other hand, I am open to new opportunities, so if you think I can fit in your team, do not hesitate to contact me."
   }
 }
