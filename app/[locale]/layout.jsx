@@ -1,7 +1,7 @@
-import './globals.css'
-import Navbar from '../components/Navbar'
+import '../globals.css'
+import Navbar from '../../components/Navbar'
 
-import ThemeContext from './context/ThemeContext'
+import ThemeContext from '../context/ThemeContext'
 import Footer from '@/components/Footer'
 export const metadata = {
   title: 'Daniel Mateu - Portfolio',
