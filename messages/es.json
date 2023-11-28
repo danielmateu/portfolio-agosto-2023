@@ -27,5 +27,17 @@
     "fifthParagraph": "En mi tiempo libre me gusta aprender tecnologías nuevas aplicándolas a mis proyectos personales, leer, hacer deporte y la música.",
     "sixthParagraph": "Actualmente estoy trabajando en mejorar mis habilidades como desarrollador Front End, Back End y Diseñador UX/UI.",
     "seventhParagraph": "Por otro lado, estoy abierto a nuevas oportunidades, así que si crees que puedo encajar en tu equipo, no dudes en contactar conmigo."
+  },
+  "MyStack": {
+    "mystackTitle": "Mi stack",
+    "description": "Estas son las tecnologías que utilizo en mis proyectos"
+  },
+  "Download": {
+    "download": "Descarga mi cv",
+    "downloadButton": "aquí"
+  },
+  "Contact": {
+    "title": "Quieres contactar?",
+    "socialMedia": "Mis redes sociales"
   }
 }

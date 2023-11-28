@@ -6,7 +6,7 @@ import { useContext } from 'react'
 
 const MyStudies = () => {
 
-  const [theme, setTheme] = useContext(Context)
+  const [theme] = useContext(Context)
 
   const coderHouseCourses = [
     'Desarrollo Web Full Stack con React.js y Node.js',
