@@ -35,7 +35,7 @@ export default function Navbar({
               <div className={"absolute inset-y-0 left-0 flex items-center sm:hidden"}>
                 {/* Mobile menu button*/}
                 <Disclosure.Button className={"inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"}>
-                  <span className="sr-only">Abrir menú principal</span>
+                  {/* <span className="sr-only">Abrir menú principal</span> */}
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
@@ -50,20 +50,9 @@ export default function Navbar({
                     src={logo}
                     alt="Portfolio logo"
                   />
-                  {/* </span></Link> */}
                 </div>
                 <div className={"hidden sm:block"}>
                   <div className={"flex "}>
-                    {/* {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))} */}
                     <a href={'#'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}>{home}</a>
                     <a href={'#projects'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}>{projects}</a>
                     <a href={'#aboutme'} className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-800  '} rounded-md px-3 py-2 text-[15px]   hover:text-sky-500 transition-all duration-200 font-medium `}>{about}</a>
@@ -80,17 +69,34 @@ export default function Navbar({
 
           <Disclosure.Panel className={"sm:hidden"}>
             <div className={"space-y-1 px-2 pb-3 pt-2"}>
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={`${theme === 'dark' ? ' text-white' : 'text-gray-800'} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
+              <Disclosure.Button
+                as="a"
+                href={'#'}
+                className={`${theme === 'dark' ? ' text-white' : 'text-gray-800'} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
+              >
+                {home}
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href={'#'}
+                className={`${theme === 'dark' ? ' text-white' : 'text-gray-800'} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
+              >
+                {projects}
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href={'#'}
+                className={`${theme === 'dark' ? ' text-white' : 'text-gray-800'} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
+              >
+                {about}
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href={'#'}
+                className={`${theme === 'dark' ? ' text-white' : 'text-gray-800'} hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
+              >
+                {contact}
+              </Disclosure.Button>
             </div>
           </Disclosure.Panel>
         </>
