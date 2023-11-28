@@ -10,7 +10,6 @@ import Context from '@/app/context/Context'
 import { useContext } from 'react'
 import Image from 'next/image'
 import ThemeToggler from './ThemeToggler'
-import Link from 'next/link'
 
 const navigation = [
   { name: 'Inicio', href: '#', current: true },
@@ -20,7 +19,7 @@ const navigation = [
 ]
 
 export default function Example() {
-  const [theme, setTheme] = useContext(Context)
+  const [theme] = useContext(Context)
   return (
     <Disclosure as="nav" className={` ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-50'} fixed w-full z-[500]`}>
       {({ open }) => (
