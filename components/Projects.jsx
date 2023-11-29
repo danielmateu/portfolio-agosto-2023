@@ -14,7 +14,7 @@ import Context from '@/app/context/Context'
 import { useContext } from 'react'
 import { data } from '@/data.js'
 
-const Projects = ({title, contactButton}) => {
+const Projects = ({title, contactButton, technologies}) => {
 
   const [theme] = useContext(Context)
 
@@ -41,7 +41,7 @@ const Projects = ({title, contactButton}) => {
             )
               :
               (
-                <ProjectCard key={project.title} title={project.title} description={project.description} img={project.img} urlDeploy={project.urlDeploy} urlRepo={project.urlRepo} sliderImages={project.sliderImages} />
+                <ProjectCard key={project.title} title={project.title} description={project.description} img={project.img} urlDeploy={project.urlDeploy} urlRepo={project.urlRepo} sliderImages={project.sliderImages} technologies={technologies} />
               )
           ))}
 

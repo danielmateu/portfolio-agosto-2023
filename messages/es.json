@@ -18,6 +18,15 @@
     "title": "Mis proyectos",
     "contactButton": "Contacta conmigo!"
   },
+  "MoreProjects": {
+    "title": "Más proyectos",
+    "description": "Estos son algunos de mis proyectos personales. Si quieres ver más, puedes visitar mi perfil de",
+    "button": "Ver más proyectos"
+  },
+  "ProjectCard": {
+    "description": "Descripción",
+    "technologies": "Tecnologías utilizadas"
+  },
   "AboutMe": {
     "title": "Sobre mí",
     "firstParagraph": "Mi nombre es Daniel Mateu, soy Desarrollador Front End y vivo en Barcelona. Me considero una persona muy disciplinada con mucha atención al detalle a la que le encanta ponerse retos difíciles.",

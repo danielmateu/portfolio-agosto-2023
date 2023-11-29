@@ -16,14 +16,9 @@ import modalBG from '@/public/Sprinkle.svg'
 import modalBGwhite from '@/public/Sprinklewhite.svg'
 import Link from 'next/link'
 
-
-
 const ProjectModal = ({ title, description, urlDeploy, urlRepo, state, sliderImages }) => {
 
-
   const [theme, setTheme] = useContext(Context)
-
-
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
@@ -37,9 +32,7 @@ const ProjectModal = ({ title, description, urlDeploy, urlRepo, state, sliderIma
 
   }, [state])
 
-
   const cancelButtonRef = useRef(null)
-
 
   return (
     <Transition.Root show={open} as={Fragment} key={title}>
@@ -68,9 +61,6 @@ const ProjectModal = ({ title, description, urlDeploy, urlRepo, state, sliderIma
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel id='projectModal' className={`relative  flex flex-col justify-center items-center w-full  overflow-hidden rounded-lg min-h-[70vh] ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-100'} text-left shadow-2xl transition-all mt-20 sm:w-[95%]    lg:max-w-[1000px] lg:p-3 mb-10 `}>
-
-
-
                 {theme === 'dark' ?
                   <Image width={1920} height={1080} alt={description} src={modalBG} className='w-full h-full absolute  bottom-0 object-cover z-0' />
                   :

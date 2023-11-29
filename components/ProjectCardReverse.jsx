@@ -17,9 +17,6 @@ const ProjectCardReverse = ({title, img,  description, urlDeploy, urlRepo,slider
   const [theme, setTheme] = useContext(Context)
 
   const [open, setOpen ] = useState(false)
-  
-  
-  
 
     const checkModalState = ()=>{
       if(open === false){
@@ -28,9 +25,6 @@ const ProjectCardReverse = ({title, img,  description, urlDeploy, urlRepo,slider
         setOpen(false)
       }
     }
-
-    
-  
 
   return (
     <motion.div initial={{y:150}} whileInView={{y:0}} transition={{ duration: 0.5}} viewport={{once:true}}  className={'flex w-[100%] max-w-[350px] md:max-w-[750px] lg:max-w-[850px] md:gap-x-5 flex-col md:flex-row-reverse m-auto  justify-center items-center'}>

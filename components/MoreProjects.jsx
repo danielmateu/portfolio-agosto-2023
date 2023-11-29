@@ -13,7 +13,7 @@ import Link from 'next/link'
 import { data } from '@/data'
 import { BsBootstrap } from 'react-icons/bs'
 
-const MoreProjects = () => {
+const MoreProjects = ({title, description}) => {
 
   const [theme, setTheme] = useContext(Context)
 
@@ -26,8 +26,9 @@ const MoreProjects = () => {
 
         <div className='w-full max-w-[350px] md:max-w-[800px] md:pl-3  lg:max-w-[1000px]  '>
 
-          <h2 className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} text-3xl self-start m-auto mt-[100px] mb-[60px] ml-5  lg:ml-2   flex`}>Más proyectos
+          <h2 className={`${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} text-3xl self-start m-auto mt-[100px] ml-5  lg:ml-2   flex`}>{title}
           </h2>
+          <p className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'} text-lg py-2 mb-[60px]`}>{description} <a href="https://github.com/danielmateu" className='hover:underline hover:text-sky-500' target='_blank'>Github.</a></p>
         </div>
       </div>
 

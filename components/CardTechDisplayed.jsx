@@ -5,8 +5,6 @@ import { SiFirebase, SiPrisma, SiSupabase, SiMongodb, SiSocketdotio } from 'reac
 import { SiJavascript, SiTailwindcss, SiNextdotjs, SiTypescript } from 'react-icons/si'
 
 const CardTechDisplayed = ({ title }) => {
-
-
   return (
     <div className={'flex gap-3'}>
 

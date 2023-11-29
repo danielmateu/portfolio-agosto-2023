@@ -10,14 +10,16 @@ import { useTranslations } from "next-intl"
 
 export default function Page() {
 
-  const t = useTranslations('Index');
+  const c = useTranslations('Contact');
+  const download = useTranslations('Download');
+  const moreProjects = useTranslations('MoreProjects');
+  const mystack = useTranslations('MyStack');
   const p = useTranslations('Projects');
   const par = useTranslations('AboutMe');
-  const mystack = useTranslations('MyStack');
-  const download = useTranslations('Download');
-  const c = useTranslations('Contact');
+  const projectCard = useTranslations('ProjectCard');
+  const t = useTranslations('Index');
 
-  
+
 
   return (
     <main className="main-container min-h-[100vh]  w-full flex flex-col items-center justify-center ">
@@ -33,8 +35,12 @@ export default function Page() {
         id="#projects"
         title={p("title")}
         contactButton={p("contactButton")}
+        technologies={projectCard("technologies")}
       />
-      <MoreProjects />
+      <MoreProjects
+        title={moreProjects("title")}
+        description={moreProjects("description")}
+      />
       <AboutMe
         id="#aboutme"
         title={par("title")}

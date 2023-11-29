@@ -18,6 +18,14 @@
     "title": "My projects",
     "contactButton": "Contact me!"
   },
+  "MoreProjects": {
+    "title": "More projects",
+    "description": "These are some of the projects I have done. If you want to see more, you can visit my ",
+    "button": "See more projects"
+  },
+  "ProjectCard": {
+    "technologies": "Used technologies"
+  },
   "AboutMe": {
     "title": "About me",
     "firstParagraph": "I'm a Front End Developer living in Barcelona. I consider myself a very disciplined person with a lot of attention to detail who loves to set difficult challenges.",
