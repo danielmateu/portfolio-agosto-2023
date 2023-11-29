@@ -41,6 +41,27 @@
     "mystackTitle": "Mi stack",
     "description": "Estas son las tecnologías que utilizo en mis proyectos"
   },
+  "MyStudies": {
+    "title": "My studies",
+    "description": "Estos son algunos de los cursos que he realizado para mejorar mis habilidades como desarrollador web fullstack",
+    "courses": {
+      "firstCourse": {
+        "title": "Front End and UX/UI Design",
+        "description": "This course is focused on the Front End and UX/UI Design. It is a 6-month course where you learn the most used technologies in the market, such as JavaScript, Angular, version control with Git and database management with MySQL.",
+        "date": "From October 2020 to March 2021"
+      },
+      "secondCourse": {
+        "title": "React",
+        "description": "This course is focused on React. It is a 3-month course where you learn the most used technologies in the market, such as React, Redux, version control with Git and database management with MongoDB.",
+        "date": "From April 2021 to June 2021"
+      },
+      "thirdCourse": {
+        "title": "Node.js",
+        "description": "This course is focused on Node.js. It is a 3-month course where you learn the most used technologies in the market, such as Node.js, Express, version control with Git and database management with MongoDB.",
+        "date": "From July 2021 to September 2021"
+      }
+    }
+  },
   "Download": {
     "download": "Descarga mi cv",
     "downloadButton": "aquí"

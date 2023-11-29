@@ -60,7 +60,7 @@ export const data = [
     {
         id: 13,
         title: 'Discord Clone',
-        description: 'Clon de Discord, en el que se puede chatear con los usuarios que estén conectados.',
+        description: 'Discord clone, where you can chat with users who are online.',
         img: discord,
         urlDeploy: 'https://nukitord-8fcd1b4a9158.herokuapp.com/',
         urlRepo: 'https://github.com/danielmateu/discord_clone',
@@ -78,7 +78,7 @@ export const data = [
     {
         id: 1,
         title: 'Nuko AI',
-        description: 'Aplicación Web que conecta con el API de open ai para generar textos, código, imágenes incluso música.',
+        description: 'Web application that connects to the open ai API to generate text, code, images and even music.',
         img: nuko_ai,
         urlDeploy: 'https://nuk-ai.vercel.app/',
         urlRepo: 'https://github.com/danielmateu/ai-sass',
@@ -101,7 +101,7 @@ export const data = [
     {
         id: 2,
         title: 'Dudes AI',
-        description: 'Aplicación que consume los recursos de la IA para hablar con nuestros colegas más top.',
+        description: 'Application that consumes AI resources to talk to our top colleagues.',
         img: dudes_ai,
         urlDeploy: 'https://ai-dudes.vercel.app/',
         urlRepo: 'https://github.com/danielmateu/ai-dudes',
@@ -123,7 +123,7 @@ export const data = [
     {
         id: 3,
         title: 'Spotify Clone',
-        description: 'Clon de Spotify, primer contacto con NextJs 13, ya tocaba actualizarse. Siguiendo las indicaciones de Code With Antonio para comprobar las nuevas features!',
+        description: 'Spotify clone, first contact with NextJs 13, it was time to update. Following Code With Antonio instructions to test the new features!',
         img: spotify_clon,
         urlDeploy: 'https://spotify-clone-dmp.vercel.app/',
         urlRepo: 'https://github.com/danielmateu/spotify-clone',
@@ -145,7 +145,7 @@ export const data = [
     {
         id: 12,
         title: 'My Places',
-        description: 'Clon de la web de Airbnb, en el que se puede ver los alojamientos disponibles, y filtrar por categorías. Creado con React, Nextjs, Tailwindcss.',
+        description: 'Clone of the Airbnb website, where you can see the available accommodations, and filter by categories. Created with React, Nextjs, Tailwindcss.',
         img: my_places,
         urlDeploy: 'https://my-places-chi.vercel.app/',
         urlRepo: 'https://github.com/danielmateu/airbnb',
@@ -175,7 +175,7 @@ export const data = [
     {
         id: 14,
         title: 'Notion Clone',
-        description: 'Clon de Notion, en el que se puede crear notas, y editarlas. Creado con React, Nextjs 13, Tailwindcss, Convex para la gestión del backend y Clerk para la autenticación',
+        description: 'Clone of Notion, in which you can create notes, and edit them. Created with React, Nextjs 13, Tailwindcss, Convex for backend management and Clerk for authentication.',
         img: nukotion,
         urlDeploy: 'https://nukotion-owlh0l4w7-danielmateu.vercel.app/',
         urlRepo: 'https://github.com/danielmateu/nukotion',
@@ -194,7 +194,7 @@ export const data = [
     {
         id: 4,
         title: 'Four Frame',
-        description: 'Clon de Netflix, en el que se puede ver el trailer de las películas, y filtrar por categorías. Creado con React, Nextjs, Tailwindcss, y la API de themoviedb.org',
+        description: 'Netflix clone, where you can watch movie trailers, and filter by categories. Created with React, Nextjs, Tailwindcss, and themoviedb.org API.',
         img: four_frame,
         urlDeploy: 'https://four-frame.vercel.app/',
         urlRepo: 'https://github.com/danielmateu/four-frame',
@@ -212,7 +212,7 @@ export const data = [
     {
         id: 5,
         title: 'Solid Camper Store',
-        description: 'Ecommerce completo, con carrito de la compra, pasarela de pago, y panel de administración.',
+        description: 'Complete Ecommerce, with shopping cart, payment gateway, and administration panel.',
         img: solid_camper,
         urlDeploy: 'https://solidcamper.herokuapp.com/',
         urlRepo: 'https://github.com/danielmateu/05-teslo-shop',
@@ -238,7 +238,7 @@ export const data = [
     {
         id: 6,
         title: 'CRM de Clientes',
-        description: ' CRM (Customer Relationship Management) que permite la gestión de clientes, pedidos y productos.',
+        description: 'CRM (Customer Relationship Management) which allows the management of customers, orders and products.',
         img: crm_clientes,
         urlDeploy: 'https://crm-cliente-next.vercel.app',
         urlRepo: 'https://github.com/danielmateu/crm-cliente-next',
@@ -260,7 +260,7 @@ export const data = [
     {
         id: 7,
         title: 'Tic Tac Toe',
-        description: 'Clásico juego del 3 en raya realizado integramente con JavaScript y Tailwindcss para el diseño.',
+        description: 'Classic 3 in a row game made entirely with JavaScript and Tailwindcss for the design.',
         img: tic_tac_toe,
         urlDeploy: 'https://tic-tac-toe-ecru-two.vercel.app/',
         urlRepo: 'https://github.com/danielmateu/tic-tac-toe',
@@ -269,7 +269,7 @@ export const data = [
     {
         id: 8,
         title: 'Crypto App',
-        description: 'Aplicación para convertir el valor de las monedas más usadas a las Crypto más demandadas',
+        description: 'Application to convert the value of the most used currencies to the most demanded Cryptocurrencies.',
         img: cripto_app,
         urlDeploy: 'https://cryptos-psi.vercel.app/',
         urlRepo: 'https://github.com/danielmateu/cryptos',
@@ -277,18 +277,10 @@ export const data = [
     {
         id: 9,
         title: 'Control de Gastos',
-        description: 'Aplicación para controlar los gastos mensuales, y poder ver en que se gasta más dinero.',
+        description: 'Application to control monthly expenses, and to be able to see where you spend more money.',
         img: gastos,
         urlDeploy: 'https://control-de-gastos-nine.vercel.app/',
         urlRepo: 'https://github.com/danielmateu/control-de-gastos',
-    },
-    {
-        id: 10,
-        title: 'Guitar LA',
-        description: 'Tienda y un blog con artículos de interés para los guitarristas.',
-        img: guitarla,
-        urlDeploy: 'https://guitarla-next-black-mu.vercel.app/',
-        urlRepo: ''
     },
     {
         id: 11,
@@ -298,4 +290,13 @@ export const data = [
         urlDeploy: 'https://mern-calendar-dmateu.herokuapp.com/',
         urlRepo: 'https://github.com/danielmateu/calendar-mern-revisited',
     },
+    {
+        id: 10,
+        title: 'Guitar LA',
+        description: 'Shop and a blog with articles of interest to guitarists.',
+        img: guitarla,
+        urlDeploy: 'https://guitarla-next-black-mu.vercel.app/',
+        urlRepo: ''
+    },
+
 ];

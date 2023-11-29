@@ -9,7 +9,6 @@ import Context from '@/app/context/Context'
 
 import { useContext } from 'react'
 
-import cv from '../public/danielmateu2023.pdf'
 import { motion } from 'framer-motion'
 import { Download } from './Download'
 
@@ -26,9 +25,11 @@ const AboutMe = ({
   description,
   download,
   downloadButton,
+  myStudies
 }) => {
 
-  const [theme, setTheme] = useContext(Context)
+  const [theme] = useContext(Context)
+  
 
   return (
     <section className={`about-me  relative w-full flex justify-center z-50 ${theme === 'dark' ? 'bg-[#1b1a25]' : 'bg-gray-50'} pt-14`} id='aboutme' >
@@ -69,7 +70,9 @@ const AboutMe = ({
           description={description}
         />
 
-        <MyStudies />
+        <MyStudies
+          myStudies={myStudies}
+        />
 
         <Download
           download={download}

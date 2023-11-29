@@ -13,7 +13,7 @@ import Link from 'next/link'
 import { data } from '@/data'
 import { BsBootstrap } from 'react-icons/bs'
 
-const MoreProjects = ({title, description}) => {
+const MoreProjects = ({title, description, technologies}) => {
 
   const [theme, setTheme] = useContext(Context)
 
@@ -60,7 +60,7 @@ const MoreProjects = ({title, description}) => {
 
 
             <div className='flex justify-between items-center w-full pt-4 '>
-              <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'} text-sm `}>Stack usado: </span>
+              <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'} text-sm `}>{technologies}: </span>
 
               {project.title === 'CRM de Clientes' &&
                 <div className='flex gap-2'>

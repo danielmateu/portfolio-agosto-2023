@@ -18,8 +18,7 @@ export default function Page() {
   const par = useTranslations('AboutMe');
   const projectCard = useTranslations('ProjectCard');
   const t = useTranslations('Index');
-
-
+  const myStudies = useTranslations('MyStudies');
 
   return (
     <main className="main-container min-h-[100vh]  w-full flex flex-col items-center justify-center ">
@@ -40,6 +39,7 @@ export default function Page() {
       <MoreProjects
         title={moreProjects("title")}
         description={moreProjects("description")}
+        technologies={projectCard("technologies")}
       />
       <AboutMe
         id="#aboutme"
@@ -55,6 +55,7 @@ export default function Page() {
         description={mystack("description")}
         download={download("download")}
         downloadButton={download("downloadButton")}
+        myStudies={myStudies("description")}
       />
       <Contact
         id="#contact"

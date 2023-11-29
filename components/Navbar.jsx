@@ -11,7 +11,6 @@ import { useContext } from 'react'
 import Image from 'next/image'
 import ThemeToggler from './ThemeToggler'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 export default function Navbar({
   home,
@@ -20,9 +19,7 @@ export default function Navbar({
   contact
 }) {
   const [theme] = useContext(Context)
-  const pathname = usePathname()
 
-  console.log(pathname);
   return (
     <Disclosure as="nav" className={` ${theme === 'dark' ? 'bg-[#1F1D2B]' : 'bg-gray-50'} fixed w-full z-[500]`}>
       {({ open }) => (

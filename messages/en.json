@@ -40,6 +40,16 @@
     "mystackTitle": "My stack",
     "description": "These are the technologies I use in my projects."
   },
+  "MyStudies": {
+    "title": "My studies",
+    "description": "These are the courses I have taken to become a web developer.",
+    "courses": {
+        "front_end":"Front end dev",
+        "full_stack": "PHP and MySQL",
+        "ux_ui": "UX/UI Design with Figma"
+      }
+    
+  },
   "Download": {
     "download": "Download my cv",
     "downloadButton": "here!"

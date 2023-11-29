@@ -4,56 +4,42 @@ import { BsDot } from 'react-icons/bs'
 import Context from '@/app/context/Context'
 import { useContext } from 'react'
 
-const MyStudies = () => {
+
+const MyStudies = ({ myStudies }) => {
 
   const [theme] = useContext(Context)
 
   const coderHouseCourses = [
-    'Desarrollo Web Full Stack con React.js y Node.js',
-    'Next Js',
-    'UX/UI Design con Figma',
-    'Tailwind CSS',
-    'Librerías React',
-    'Librerías Node.js',
-    'Backend con Node.js, Express y MongoDB',
-    'MongoDB',
+    'Full Stack Development with React & Node',
+    'Nextjs 13 + MongoDB',
+    'UX/UI Design',
+    'Backend con Nodejs, Express y MongoDB',
+    'Video games development with Unity and C#',
     'Docker',
-    'React Native',
-    'Firebase',
-    'PHP',
-    'C#',
-    'Desarrollo de videojuegos con Unity',
-    'Pyhon',
+    'Full Stack with PHP and MySQL',
   ]
 
   const educacionITCourses = [
-    'Javascript avanzado',
+    'JS ES6+',
     'Typescript',
-    'Angular',
-    'MySQL',
-    'Bootstrap',
-    'Sass & Less',
-    'POO con Javascript',
-    'Diseño de interfaces con Figma',
-    'Web layout with html & css',
-    'Introduction to UX',
-    'Web development with html ',
-    `Git y Github`,
+    'Angular 12 with MySQL',
+    'Interface design with Figma',
+    `Git and Github for version control`,
   ]
 
   const cursus42 = [
     'Shell',
-    'Prgramacioón en C',
-    'Sistemas operativos',
-    'Algoritmia',
+    'C',
+    'Vim',
     'Peer learning',
-    'Desarrollo en Vim'
   ]
+
+  
 
   return (
     <>
       <div className={'w-full'}>
-        <h6 className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-900'} text-2xl font-medium mb-12 mt-20 flex items-end relative `}>Mis estudios como programador</h6>
+        <h6 className={`${theme === 'dark' ? 'text-gray-100' : 'text-gray-900'} text-2xl font-medium mb-12 mt-20 flex items-end relative `}>{myStudies}</h6>
 
         <div className={'flex gap-10 flex-wrap'}>
 
@@ -67,7 +53,6 @@ const MyStudies = () => {
               {coderHouseCourses.map((course) => (
                 <li key={course} className={`flex whitespace-nowrap items-center ${theme === 'dark' ? 'text-gray-300' : 'text-gray-500'} text-sm  md:text-[15px]`}><BsDot className={'text-lg'} /> {course} </li>
               ))}
-
 
             </ul>
           </div>
