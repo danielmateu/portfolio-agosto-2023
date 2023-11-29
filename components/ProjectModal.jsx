@@ -92,24 +92,11 @@ const ProjectModal = ({ title, description, urlDeploy, urlRepo, state, sliderIma
                           </SwiperSlide>
                         ))}
                       </Swiper>
-
-
-
-
-
-
-
-
                     </div>
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-[99%]">
                       <Dialog.Title as="h3" className={`font-bold text-xl md:text-2xl text-left pl-2 leading-6 mb-2   sm:pt-5 ${theme === 'dark' ? 'text-gray-50' : 'text-black'} flex justify-between`}>
-
                         <div>
-
                           <span className=''>{title} </span>
-
-
-
                         </div>
                         <span className='hidden text-sm sm:text-xl  pl-3 sm:inline sm:pr-7'> </span>
                       </Dialog.Title>
@@ -134,8 +121,6 @@ const ProjectModal = ({ title, description, urlDeploy, urlRepo, state, sliderIma
                 <div className="flex w-[95%] items-center justify-between z-50  sm:px-6 mt-4 mb-4">
 
                   <div className='w-auto h-auto flex gap-4'>
-
-
                     <Link href={urlDeploy} target='_blank' name='deploy' className=' text-xs rounded-lg  sm:text-sm font-semibold px-10  py-[10px]  text-gray-50 shadow-sm sm:mt-1   transition duration-200 bg-sky-500 hover:opacity-90 '>Visit</Link>
 
                     <Link href={urlRepo} target='_blank' name='repo' className={` text-xs rounded-lg  sm:text-sm font-semibold px-4 py-[10px] border border-sky-500  ${theme === 'dark' ? 'text-gray-50' : 'text-gray-900'} shadow-sm sm:mt-1  transition duration-200 hover:bg-sky-500 hover:text-white  `}>Repository</Link>
